@@ -1,0 +1,596 @@
+<html>
+<head>
+<title>TestNG:  Test to verify REST API Request and response</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test to verify REST API Request and response</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>16/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jan 16 15:53:11 CET 2023</td>
+</tr>
+<tr><td>Total time:</td><td>7 seconds (7151 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>RestRequest </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='scripts.testRestAPI.testRequestAndResponse()'><b>testRequestAndResponse</b><br>Test class: scripts.testRestAPI<br>Parameters: {id=, Url=posts/101, SrNo=14, Method=PUT, Domain=jsonplaceholder.typicode.com, body=, ResponseCode=500, userId=, FieldNamesShouldNotPresentInResponse=, ResponseFieldNamesToVerify=, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with invalid id with PUT method
+Expected Result: 1. Response Status code should be 500
+2. Json response should be BLANK, title=, FieldNames=, Testcase_ID=Request send and verify response}<br/>
+<a href="#Output-550826256" onClick='toggleBox("Output-550826256", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-550826256" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-550826256">
+Feature POSITIVE
+Step to execute: Send API Request with invalid id with PUT method
+Expected Result: 1. Response Status code should be 500
+2. Json response should be BLANK Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/101 Started <br/>
+Building JSON Body {  "" : null }<br/>
+Sending Request : https://jsonplaceholder.typicode.com/posts/101<br/>
+Response Code from API : 500<br/>
+Response from API : TypeError: Cannot read properties of undefined (reading 'id')
+    at update (/app/node_modules/json-server/lib/server/router/plural.js:262:24)
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at next (/app/node_modules/express/lib/router/route.js:137:13)
+    at next (/app/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/app/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at /app/node_modules/express/lib/router/index.js:281:22
+    at param (/app/node_modules/express/lib/router/index.js:354:14)
+    at param (/app/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/app/node_modules/express/lib/router/index.js:410:3)<br/>
+API has Internal server error<br/>
+Feature POSITIVE
+Step to execute: Send API Request with invalid id with PUT method
+Expected Result: 1. Response Status code should be 500
+2. Json response should be BLANK Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/101 Done! <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>scripts.testRestAPI@9ed238c</td></tr>
+<tr>
+<td title='scripts.testRestAPI.testRequestAndResponse()'><b>testRequestAndResponse</b><br>Test class: scripts.testRestAPI<br>Parameters: {id="1", Url=posts/1, SrNo=10, Method=PATCH, Domain=jsonplaceholder.typicode.com, body="quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto", ResponseCode=200, userId=1, FieldNamesShouldNotPresentInResponse=, ResponseFieldNamesToVerify=id;title;body;userId, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with valid data with PATCH method. Jason body includes 1 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id', 'title', 'body' & 'userId' and it should match with data mentioned in respective columns, title="sunt aut facere repellat provident occaecati excepturi optio reprehenderit", FieldNames=title, Testcase_ID=Request send and verify response}<br/>
+<a href="#Output-515910917" onClick='toggleBox("Output-515910917", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-515910917" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-515910917">
+Feature POSITIVE
+Step to execute: Send API Request with valid data with PATCH method. Jason body includes 1 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id', 'title', 'body' & 'userId' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Started <br/>
+Building JSON Body {  "title" : "sunt aut facere repellat provident occaecati excepturi optio reprehenderit" }<br/>
+Sending Request : https://jsonplaceholder.typicode.com/posts/1<br/>
+Response Code from API : 200<br/>
+Response from API : {
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}<br/>
+Verify 'id' Expected : '1' Actual : 1<br/>
+Verify 'title' Expected : 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit' Actual : sunt aut facere repellat provident occaecati excepturi optio reprehenderit<br/>
+Verify 'body' Expected : 'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto' Actual : quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto<br/>
+Verify 'userId' Expected : '1' Actual : 1<br/>
+Feature POSITIVE
+Step to execute: Send API Request with valid data with PATCH method. Jason body includes 1 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id', 'title', 'body' & 'userId' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Done! <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>scripts.testRestAPI@9ed238c</td></tr>
+<tr>
+<td title='scripts.testRestAPI.testRequestAndResponse()'><b>testRequestAndResponse</b><br>Test class: scripts.testRestAPI<br>Parameters: {id=, Url=posts/101, SrNo=13, Method=POST, Domain=jsonplaceholder.typicode.com, body=, ResponseCode=404, userId=, FieldNamesShouldNotPresentInResponse=, ResponseFieldNamesToVerify=, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with invalid id with POST method
+Expected Result: 1. Response Status code should be 404
+2. Json response should be BLANK, title=, FieldNames=, Testcase_ID=Request send and verify response}<br/>
+<a href="#Output-887495843" onClick='toggleBox("Output-887495843", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-887495843" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-887495843">
+Feature POSITIVE
+Step to execute: Send API Request with invalid id with POST method
+Expected Result: 1. Response Status code should be 404
+2. Json response should be BLANK Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/101 Started <br/>
+Building JSON Body {  "" : null }<br/>
+Sending Request : https://jsonplaceholder.typicode.com/posts/101<br/>
+Response Code from API : 404<br/>
+Response from API : {}<br/>
+Feature POSITIVE
+Step to execute: Send API Request with invalid id with POST method
+Expected Result: 1. Response Status code should be 404
+2. Json response should be BLANK Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/101 Done! <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>scripts.testRestAPI@9ed238c</td></tr>
+<tr>
+<td title='scripts.testRestAPI.testRequestAndResponse()'><b>testRequestAndResponse</b><br>Test class: scripts.testRestAPI<br>Parameters: {id=, Url=posts/101, SrNo=16, Method=DELETE, Domain=jsonplaceholder.typicode.com, body=, ResponseCode=200, userId=, FieldNamesShouldNotPresentInResponse=, ResponseFieldNamesToVerify=, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with invalid id with DELETE method
+Expected Result: 1. Response Status code should be 200
+2. Json response should be BLANK, title=, FieldNames=, Testcase_ID=Request send and verify response}<br/>
+<a href="#Output-705686440" onClick='toggleBox("Output-705686440", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-705686440" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-705686440">
+Feature POSITIVE
+Step to execute: Send API Request with invalid id with DELETE method
+Expected Result: 1. Response Status code should be 200
+2. Json response should be BLANK Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/101 Started <br/>
+Building JSON Body {  "" : null }<br/>
+Sending Request : https://jsonplaceholder.typicode.com/posts/101<br/>
+Response Code from API : 200<br/>
+Response from API : {}<br/>
+Feature POSITIVE
+Step to execute: Send API Request with invalid id with DELETE method
+Expected Result: 1. Response Status code should be 200
+2. Json response should be BLANK Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/101 Done! <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>scripts.testRestAPI@9ed238c</td></tr>
+<tr>
+<td title='scripts.testRestAPI.testRequestAndResponse()'><b>testRequestAndResponse</b><br>Test class: scripts.testRestAPI<br>Parameters: {id="1", Url=posts/1, SrNo=6, Method=PUT, Domain=jsonplaceholder.typicode.com, body="et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad", ResponseCode=200, userId=, FieldNamesShouldNotPresentInResponse=userId, ResponseFieldNamesToVerify=id;title;body, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes only 3 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'title', 'body' & 'id' and it should match with data mentioned in respective columns, title="Siddharth Sarjerao Ughade", FieldNames=id;title;body, Testcase_ID=Request send and verify response}<br/>
+<a href="#Output-1522325335" onClick='toggleBox("Output-1522325335", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1522325335" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1522325335">
+Feature POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes only 3 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'title', 'body' & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Started <br/>
+Building JSON Body {  "id" : "1",  "title" : "Siddharth Sarjerao Ughade",  "body" : "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad" }<br/>
+Sending Request : https://jsonplaceholder.typicode.com/posts/1<br/>
+Response Code from API : 200<br/>
+Response from API : {
+  "id": 1,
+  "title": "Siddharth Sarjerao Ughade",
+  "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad"
+}<br/>
+Verify 'id' Expected : '1' Actual : 1<br/>
+Verify 'title' Expected : 'Siddharth Sarjerao Ughade' Actual : Siddharth Sarjerao Ughade<br/>
+Verify 'body' Expected : 'et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad' Actual : et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad<br/>
+Verify field 'userId' should not be present in JSON response<br/>
+Feature POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes only 3 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'title', 'body' & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Done! <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>scripts.testRestAPI@9ed238c</td></tr>
+<tr>
+<td title='scripts.testRestAPI.testRequestAndResponse()'><b>testRequestAndResponse</b><br>Test class: scripts.testRestAPI<br>Parameters: {id="101", Url=posts, SrNo=4, Method=POST, Domain=jsonplaceholder.typicode.com, body=, ResponseCode=201, userId=102, FieldNamesShouldNotPresentInResponse=title;body;userId, ResponseFieldNamesToVerify=id, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason's body is BLANK.
+Expected Result: 1. Response Status code should be 201, It should create data successfully
+2. Response to the API should be 'id' and it should match with data mentioned in respective columns, title=, FieldNames=, Testcase_ID=Request send and verify response}<br/>
+<a href="#Output-614260368" onClick='toggleBox("Output-614260368", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-614260368" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-614260368">
+Feature POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason's body is BLANK.
+Expected Result: 1. Response Status code should be 201, It should create data successfully
+2. Response to the API should be 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts Started <br/>
+Building JSON Body {  "" : null }<br/>
+Sending Request : https://jsonplaceholder.typicode.com/posts<br/>
+Response Code from API : 201<br/>
+Response from API : {
+  "": null,
+  "id": 101
+}<br/>
+Verify 'id' Expected : '101' Actual : 101<br/>
+Verify field 'title' should not be present in JSON response<br/>
+Verify field 'body' should not be present in JSON response<br/>
+Verify field 'userId' should not be present in JSON response<br/>
+Feature POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason's body is BLANK.
+Expected Result: 1. Response Status code should be 201, It should create data successfully
+2. Response to the API should be 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts Done! <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>scripts.testRestAPI@9ed238c</td></tr>
+<tr>
+<td title='scripts.testRestAPI.testRequestAndResponse()'><b>testRequestAndResponse</b><br>Test class: scripts.testRestAPI<br>Parameters: {id="101", Url=posts, SrNo=2, Method=POST, Domain=jsonplaceholder.typicode.com, body="et iusto sed quo iure", ResponseCode=201, userId=102, FieldNamesShouldNotPresentInResponse=userId, ResponseFieldNamesToVerify=title;body;id, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason body includes only two fields
+Expected Result: 1. Response Status code should be 201, It should create data successfully
+2. Response to the API should be 'title', 'body'  & 'id' and it should match with data mentioned in respective columns, title="Siddharth Sarjerao Ughade", FieldNames=title;body, Testcase_ID=Request send and verify response}<br/>
+<a href="#Output-412044451" onClick='toggleBox("Output-412044451", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-412044451" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-412044451">
+Feature POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason body includes only two fields
+Expected Result: 1. Response Status code should be 201, It should create data successfully
+2. Response to the API should be 'title', 'body'  & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts Started <br/>
+Building JSON Body {  "title" : "Siddharth Sarjerao Ughade",  "body" : "et iusto sed quo iure" }<br/>
+Sending Request : https://jsonplaceholder.typicode.com/posts<br/>
+Response Code from API : 201<br/>
+Response from API : {
+  "title": "Siddharth Sarjerao Ughade",
+  "body": "et iusto sed quo iure",
+  "id": 101
+}<br/>
+Verify 'title' Expected : 'Siddharth Sarjerao Ughade' Actual : Siddharth Sarjerao Ughade<br/>
+Verify 'body' Expected : 'et iusto sed quo iure' Actual : et iusto sed quo iure<br/>
+Verify 'id' Expected : '101' Actual : 101<br/>
+Verify field 'userId' should not be present in JSON response<br/>
+Feature POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason body includes only two fields
+Expected Result: 1. Response Status code should be 201, It should create data successfully
+2. Response to the API should be 'title', 'body'  & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts Done! <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>scripts.testRestAPI@9ed238c</td></tr>
+<tr>
+<td title='scripts.testRestAPI.testRequestAndResponse()'><b>testRequestAndResponse</b><br>Test class: scripts.testRestAPI<br>Parameters: {id="1", Url=posts/1, SrNo=9, Method=PUT, Domain=jsonplaceholder.typicode.com, body=, ResponseCode=200, userId=, FieldNamesShouldNotPresentInResponse=userId;body;title, ResponseFieldNamesToVerify=id, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body should be BLANK.
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id' and it should match with data mentioned in respective columns, title=, FieldNames=, Testcase_ID=Request send and verify response}<br/>
+<a href="#Output-277966399" onClick='toggleBox("Output-277966399", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-277966399" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-277966399">
+Feature POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body should be BLANK.
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Started <br/>
+Building JSON Body {  "" : null }<br/>
+Sending Request : https://jsonplaceholder.typicode.com/posts/1<br/>
+Response Code from API : 200<br/>
+Response from API : {
+  "": null,
+  "id": 1
+}<br/>
+Verify 'id' Expected : '1' Actual : 1<br/>
+Verify field 'userId' should not be present in JSON response<br/>
+Verify field 'body' should not be present in JSON response<br/>
+Verify field 'title' should not be present in JSON response<br/>
+Feature POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body should be BLANK.
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Done! <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>scripts.testRestAPI@9ed238c</td></tr>
+<tr>
+<td title='scripts.testRestAPI.testRequestAndResponse()'><b>testRequestAndResponse</b><br>Test class: scripts.testRestAPI<br>Parameters: {id="1", Url=posts/1, SrNo=7, Method=PUT, Domain=jsonplaceholder.typicode.com, body=, ResponseCode=200, userId=, FieldNamesShouldNotPresentInResponse=userId;body, ResponseFieldNamesToVerify=id;title, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes only 2 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'title' & 'id' and it should match with data mentioned in respective columns, title="Siddharth Sarjerao Ughade", FieldNames=id;title, Testcase_ID=Request send and verify response}<br/>
+<a href="#Output-1382955130" onClick='toggleBox("Output-1382955130", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1382955130" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1382955130">
+Feature POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes only 2 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'title' & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Started <br/>
+Building JSON Body {  "id" : "1",  "title" : "Siddharth Sarjerao Ughade" }<br/>
+Sending Request : https://jsonplaceholder.typicode.com/posts/1<br/>
+Response Code from API : 200<br/>
+Response from API : {
+  "id": 1,
+  "title": "Siddharth Sarjerao Ughade"
+}<br/>
+Verify 'id' Expected : '1' Actual : 1<br/>
+Verify 'title' Expected : 'Siddharth Sarjerao Ughade' Actual : Siddharth Sarjerao Ughade<br/>
+Verify field 'userId' should not be present in JSON response<br/>
+Verify field 'body' should not be present in JSON response<br/>
+Feature POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes only 2 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'title' & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Done! <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>scripts.testRestAPI@9ed238c</td></tr>
+<tr>
+<td title='scripts.testRestAPI.testRequestAndResponse()'><b>testRequestAndResponse</b><br>Test class: scripts.testRestAPI<br>Parameters: {id=, Url=posts/101, SrNo=15, Method=PATCH, Domain=jsonplaceholder.typicode.com, body=, ResponseCode=200, userId=, FieldNamesShouldNotPresentInResponse=, ResponseFieldNamesToVerify=, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with invalid id with PATCH method
+Expected Result: 1. Response Status code should be 200
+2. Json response should be BLANK, title=, FieldNames=, Testcase_ID=Request send and verify response}<br/>
+<a href="#Output-1958906358" onClick='toggleBox("Output-1958906358", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1958906358" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1958906358">
+Feature POSITIVE
+Step to execute: Send API Request with invalid id with PATCH method
+Expected Result: 1. Response Status code should be 200
+2. Json response should be BLANK Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/101 Started <br/>
+Building JSON Body {  "" : null }<br/>
+Sending Request : https://jsonplaceholder.typicode.com/posts/101<br/>
+Response Code from API : 200<br/>
+Response from API : {
+  "": null
+}<br/>
+Feature POSITIVE
+Step to execute: Send API Request with invalid id with PATCH method
+Expected Result: 1. Response Status code should be 200
+2. Json response should be BLANK Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/101 Done! <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>scripts.testRestAPI@9ed238c</td></tr>
+<tr>
+<td title='scripts.testRestAPI.testRequestAndResponse()'><b>testRequestAndResponse</b><br>Test class: scripts.testRestAPI<br>Parameters: {id="101", Url=posts, SrNo=3, Method=POST, Domain=jsonplaceholder.typicode.com, body=, ResponseCode=201, userId=102, FieldNamesShouldNotPresentInResponse=body;userId, ResponseFieldNamesToVerify=title;id, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason body includes only one field. 
+Expected Result: 1. Response Status code should be 201, It should create data successfully.
+2. Response to the API should be 'title' & 'id' and it should match with data mentioned in respective columns, title="Siddharth Sarjerao Ughade", FieldNames=title, Testcase_ID=Request send and verify response}<br/>
+<a href="#Output-1282916385" onClick='toggleBox("Output-1282916385", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1282916385" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1282916385">
+Feature POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason body includes only one field. 
+Expected Result: 1. Response Status code should be 201, It should create data successfully.
+2. Response to the API should be 'title' & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts Started <br/>
+Building JSON Body {  "title" : "Siddharth Sarjerao Ughade" }<br/>
+Sending Request : https://jsonplaceholder.typicode.com/posts<br/>
+Response Code from API : 201<br/>
+Response from API : {
+  "title": "Siddharth Sarjerao Ughade",
+  "id": 101
+}<br/>
+Verify 'title' Expected : 'Siddharth Sarjerao Ughade' Actual : Siddharth Sarjerao Ughade<br/>
+Verify 'id' Expected : '101' Actual : 101<br/>
+Verify field 'body' should not be present in JSON response<br/>
+Verify field 'userId' should not be present in JSON response<br/>
+Feature POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason body includes only one field. 
+Expected Result: 1. Response Status code should be 201, It should create data successfully.
+2. Response to the API should be 'title' & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts Done! <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>scripts.testRestAPI@9ed238c</td></tr>
+<tr>
+<td title='scripts.testRestAPI.testRequestAndResponse()'><b>testRequestAndResponse</b><br>Test class: scripts.testRestAPI<br>Parameters: {id="1", Url=posts/1, SrNo=5, Method=PUT, Domain=jsonplaceholder.typicode.com, body="et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad", ResponseCode=200, userId=102, FieldNamesShouldNotPresentInResponse=, ResponseFieldNamesToVerify=id;title;body;userId, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes all 4 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'title', 'body', 'userid' & 'id' and it should match with data mentioned in respective columns, title="Siddharth Sarjerao Ughade", FieldNames=id;title;body;userId, Testcase_ID=Request send and verify response}<br/>
+<a href="#Output-657492392" onClick='toggleBox("Output-657492392", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-657492392" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-657492392">
+Feature POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes all 4 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'title', 'body', 'userid' & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Started <br/>
+Building JSON Body {  "id" : "1",  "title" : "Siddharth Sarjerao Ughade",  "body" : "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad",  "userId" : 102 }<br/>
+Sending Request : https://jsonplaceholder.typicode.com/posts/1<br/>
+Response Code from API : 200<br/>
+Response from API : {
+  "id": 1,
+  "title": "Siddharth Sarjerao Ughade",
+  "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad",
+  "userId": 102
+}<br/>
+Verify 'id' Expected : '1' Actual : 1<br/>
+Verify 'title' Expected : 'Siddharth Sarjerao Ughade' Actual : Siddharth Sarjerao Ughade<br/>
+Verify 'body' Expected : 'et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad' Actual : et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad<br/>
+Verify 'userId' Expected : '102' Actual : 102<br/>
+Feature POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes all 4 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'title', 'body', 'userid' & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Done! <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>scripts.testRestAPI@9ed238c</td></tr>
+<tr>
+<td title='scripts.testRestAPI.testRequestAndResponse()'><b>testRequestAndResponse</b><br>Test class: scripts.testRestAPI<br>Parameters: {id="101", Url=posts, SrNo=1, Method=POST, Domain=jsonplaceholder.typicode.com, body="et iusto sed quo iure", ResponseCode=201, userId=102, FieldNamesShouldNotPresentInResponse=, ResponseFieldNamesToVerify=title;body;userId;id, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason body includes all 3 fields
+Expected Result: 1. Response Status code should be 201, It should create data successfully
+2. Response to the API should be 'title', 'body', 'userid' & 'id' and it should match with data mentioned in respective columns, title="Siddharth Sarjerao Ughade", FieldNames=title;body;userId, Testcase_ID=Request send and verify response}<br/>
+<a href="#Output-1516244505" onClick='toggleBox("Output-1516244505", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1516244505" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1516244505">
+Feature POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason body includes all 3 fields
+Expected Result: 1. Response Status code should be 201, It should create data successfully
+2. Response to the API should be 'title', 'body', 'userid' & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts Started <br/>
+Building JSON Body {  "title" : "Siddharth Sarjerao Ughade",  "body" : "et iusto sed quo iure",  "userId" : 102 }<br/>
+Sending Request : https://jsonplaceholder.typicode.com/posts<br/>
+Response Code from API : 201<br/>
+Response from API : {
+  "title": "Siddharth Sarjerao Ughade",
+  "body": "et iusto sed quo iure",
+  "userId": 102,
+  "id": 101
+}<br/>
+Verify 'title' Expected : 'Siddharth Sarjerao Ughade' Actual : Siddharth Sarjerao Ughade<br/>
+Verify 'body' Expected : 'et iusto sed quo iure' Actual : et iusto sed quo iure<br/>
+Verify 'userId' Expected : '102' Actual : 102<br/>
+Verify 'id' Expected : '101' Actual : 101<br/>
+Feature POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason body includes all 3 fields
+Expected Result: 1. Response Status code should be 201, It should create data successfully
+2. Response to the API should be 'title', 'body', 'userid' & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts Done! <br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>scripts.testRestAPI@9ed238c</td></tr>
+<tr>
+<td title='scripts.testRestAPI.testRequestAndResponse()'><b>testRequestAndResponse</b><br>Test class: scripts.testRestAPI<br>Parameters: {id="1", Url=posts/1, SrNo=8, Method=PUT, Domain=jsonplaceholder.typicode.com, body=, ResponseCode=200, userId=, FieldNamesShouldNotPresentInResponse=userId;body;title, ResponseFieldNamesToVerify=id, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes only 1 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id' and it should match with data mentioned in respective columns, title=, FieldNames=id, Testcase_ID=Request send and verify response}<br/>
+<a href="#Output-1445493105" onClick='toggleBox("Output-1445493105", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1445493105" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1445493105">
+Feature POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes only 1 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Started <br/>
+Building JSON Body {  "id" : "1" }<br/>
+Sending Request : https://jsonplaceholder.typicode.com/posts/1<br/>
+Response Code from API : 200<br/>
+Response from API : {
+  "id": 1
+}<br/>
+Verify 'id' Expected : '1' Actual : 1<br/>
+Verify field 'userId' should not be present in JSON response<br/>
+Verify field 'body' should not be present in JSON response<br/>
+Verify field 'title' should not be present in JSON response<br/>
+Feature POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes only 1 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Done! <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>scripts.testRestAPI@9ed238c</td></tr>
+<tr>
+<td title='scripts.testRestAPI.testRequestAndResponse()'><b>testRequestAndResponse</b><br>Test class: scripts.testRestAPI<br>Parameters: {id=, Url=posts/1, SrNo=12, Method=DELETE, Domain=jsonplaceholder.typicode.com, body=, ResponseCode=200, userId=, FieldNamesShouldNotPresentInResponse=, ResponseFieldNamesToVerify=, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with valid data with DELETE method. Jason body should be BLANK
+Expected Result: 1. Response Status code should be 200
+2. Json response should be BLANK, title=, FieldNames=, Testcase_ID=Request send and verify response}<br/>
+<a href="#Output-1368487245" onClick='toggleBox("Output-1368487245", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1368487245" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1368487245">
+Feature POSITIVE
+Step to execute: Send API Request with valid data with DELETE method. Jason body should be BLANK
+Expected Result: 1. Response Status code should be 200
+2. Json response should be BLANK Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Started <br/>
+Building JSON Body {  "" : null }<br/>
+Sending Request : https://jsonplaceholder.typicode.com/posts/1<br/>
+Response Code from API : 200<br/>
+Response from API : {}<br/>
+Feature POSITIVE
+Step to execute: Send API Request with valid data with DELETE method. Jason body should be BLANK
+Expected Result: 1. Response Status code should be 200
+2. Json response should be BLANK Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Done! <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>scripts.testRestAPI@9ed238c</td></tr>
+<tr>
+<td title='scripts.testRestAPI.testRequestAndResponse()'><b>testRequestAndResponse</b><br>Test class: scripts.testRestAPI<br>Parameters: {id="1", Url=posts/1, SrNo=11, Method=PATCH, Domain=jsonplaceholder.typicode.com, body="quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto", ResponseCode=200, userId=1, FieldNamesShouldNotPresentInResponse=, ResponseFieldNamesToVerify=id;title;body;userId, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with valid data with PATCH method. Jason body should be BLANK
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id', 'title', 'body' & 'userId' and it should match with data mentioned in respective columns, title="sunt aut facere repellat provident occaecati excepturi optio reprehenderit", FieldNames=, Testcase_ID=Request send and verify response}<br/>
+<a href="#Output-1695817579" onClick='toggleBox("Output-1695817579", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1695817579" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1695817579">
+Feature POSITIVE
+Step to execute: Send API Request with valid data with PATCH method. Jason body should be BLANK
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id', 'title', 'body' & 'userId' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Started <br/>
+Building JSON Body {  "" : null }<br/>
+Sending Request : https://jsonplaceholder.typicode.com/posts/1<br/>
+Response Code from API : 200<br/>
+Response from API : {
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
+  "": null
+}<br/>
+Verify 'id' Expected : '1' Actual : 1<br/>
+Verify 'title' Expected : 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit' Actual : sunt aut facere repellat provident occaecati excepturi optio reprehenderit<br/>
+Verify 'body' Expected : 'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto' Actual : quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto<br/>
+Verify 'userId' Expected : '1' Actual : 1<br/>
+Feature POSITIVE
+Step to execute: Send API Request with valid data with PATCH method. Jason body should be BLANK
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id', 'title', 'body' & 'userId' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Done! <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>scripts.testRestAPI@9ed238c</td></tr>
+</table><p>
+</body>
+</html>

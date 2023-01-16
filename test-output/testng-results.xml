@@ -1,0 +1,2475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="6" total="36" passed="30" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request.  
+Expected Result: 1. API should return as response of 100 userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given userid & id Testcase ID : Get all data for user id and verify data For API : https://jsonplaceholder.typicode.com/posts Started ]]>
+    </line>
+    <line>
+      <![CDATA[Verifying number of records return by API]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request with valid postid
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify 1st record in response Testcase ID : Get all data for post id and verify data For API : https://jsonplaceholder.typicode.com/comments?postId=1 Started ]]>
+    </line>
+    <line>
+      <![CDATA[Verifying number of records return by API]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason body includes all 3 fields
+Expected Result: 1. Response Status code should be 201, It should create data successfully
+2. Response to the API should be 'title', 'body', 'userid' & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts Started ]]>
+    </line>
+    <line>
+      <![CDATA[Building JSON Body {  "title" : "Siddharth Sarjerao Ughade",  "body" : "et iusto sed quo iure",  "userId" : 102 }]]>
+    </line>
+    <line>
+      <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts]]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'name' for postId 1]]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'title' for userid 1]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'title' : Expected 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit' Actual : 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit']]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'body' for userid 1]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'name' : Expected 'id labore ex et quam laborum' Actual : 'id labore ex et quam laborum']]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'name' for postId 1]]>
+    </line>
+    <line>
+      <![CDATA[Response Code from API : 201]]>
+    </line>
+    <line>
+      <![CDATA[Response from API : {
+  "title": "Siddharth Sarjerao Ughade",
+  "body": "et iusto sed quo iure",
+  "userId": 102,
+  "id": 101
+}]]>
+    </line>
+    <line>
+      <![CDATA[Verify 'title' Expected : 'Siddharth Sarjerao Ughade' Actual : Siddharth Sarjerao Ughade]]>
+    </line>
+    <line>
+      <![CDATA[Verify 'body' Expected : 'et iusto sed quo iure' Actual : et iusto sed quo iure]]>
+    </line>
+    <line>
+      <![CDATA[Verify 'userId' Expected : '102' Actual : 102]]>
+    </line>
+    <line>
+      <![CDATA[Verify 'id' Expected : '101' Actual : 101]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason body includes all 3 fields
+Expected Result: 1. Response Status code should be 201, It should create data successfully
+2. Response to the API should be 'title', 'body', 'userid' & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts Done! ]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason body includes only two fields
+Expected Result: 1. Response Status code should be 201, It should create data successfully
+2. Response to the API should be 'title', 'body'  & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts Started ]]>
+    </line>
+    <line>
+      <![CDATA[Building JSON Body {  "title" : "Siddharth Sarjerao Ughade",  "body" : "et iusto sed quo iure" }]]>
+    </line>
+    <line>
+      <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'email' : Expected 'Eliseo@gardner.biz' Actual : 'Eliseo@gardner.biz']]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'body' for postId 1]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'body' : Expected 'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto' Actual : 'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto']]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request.  
+Expected Result: 1. API should return as response of 100 userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given userid & id Testcase ID : Get all data for user id and verify data Done!! ]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request.  
+Expected Result: 1. API should return as response of 100 userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given user id & id Testcase ID : Get all data for user id and verify data For API : https://jsonplaceholder.typicode.com/posts Started ]]>
+    </line>
+    <line>
+      <![CDATA[Verifying number of records return by API]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'body' : Expected 'laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium' Actual : 'laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium']]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request with valid postid
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify 1st record in response Testcase ID : Get all data for post id and verify data Done!! ]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request with valid postid
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify last record in response Testcase ID : Get all data for post id and verify data For API : https://jsonplaceholder.typicode.com/comments?postId=1 Started ]]>
+    </line>
+    <line>
+      <![CDATA[Verifying number of records return by API]]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'title' for userid 10]]>
+    </line>
+    <line>
+      <![CDATA[Response Code from API : 201]]>
+    </line>
+    <line>
+      <![CDATA[Response from API : {
+  "title": "Siddharth Sarjerao Ughade",
+  "body": "et iusto sed quo iure",
+  "id": 101
+}]]>
+    </line>
+    <line>
+      <![CDATA[Verify 'title' Expected : 'Siddharth Sarjerao Ughade' Actual : Siddharth Sarjerao Ughade]]>
+    </line>
+    <line>
+      <![CDATA[Verify 'body' Expected : 'et iusto sed quo iure' Actual : et iusto sed quo iure]]>
+    </line>
+    <line>
+      <![CDATA[Verify 'id' Expected : '101' Actual : 101]]>
+    </line>
+    <line>
+      <![CDATA[Verify field 'userId' should not be present in JSON response]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason body includes only two fields
+Expected Result: 1. Response Status code should be 201, It should create data successfully
+2. Response to the API should be 'title', 'body'  & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts Done! ]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason body includes only one field. 
+Expected Result: 1. Response Status code should be 201, It should create data successfully.
+2. Response to the API should be 'title' & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts Started ]]>
+    </line>
+    <line>
+      <![CDATA[Building JSON Body {  "title" : "Siddharth Sarjerao Ughade" }]]>
+    </line>
+    <line>
+      <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts]]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'name' for postId 1]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'title' : Expected 'at nam consequatur ea labore ea harum' Actual : 'at nam consequatur ea labore ea harum']]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'body' for userid 10]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'body' : Expected 'cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam et distinctio eum\naccusamus ratione error aut' Actual : 'cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam et distinctio eum\naccusamus ratione error aut']]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request.  
+Expected Result: 1. API should return as response of 100 userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given user id & id Testcase ID : Get all data for user id and verify data Done!! ]]>
+    </line>
+    <line>
+      <![CDATA[Feature NEGATIVE : 
+Step To Execute : Send Request.  
+Expected Result: 1. API should return as response of 100 userId's data.
+2. Search for userId which is not present in response, so 'title' & 'body' should be BLANK Testcase ID : Get all data for user id and verify data For API : https://jsonplaceholder.typicode.com/posts Started ]]>
+    </line>
+    <line>
+      <![CDATA[Verifying number of records return by API]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'name' : Expected 'vero eaque aliquid doloribus et culpa' Actual : 'vero eaque aliquid doloribus et culpa']]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'name' for postId 1]]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'title' for userid 0]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'email' : Expected 'Hayden@althea.biz' Actual : 'Hayden@althea.biz']]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'body' for postId 1]]>
+    </line>
+    <line>
+      <![CDATA[Response Code from API : 201]]>
+    </line>
+    <line>
+      <![CDATA[Response from API : {
+  "title": "Siddharth Sarjerao Ughade",
+  "id": 101
+}]]>
+    </line>
+    <line>
+      <![CDATA[Verify 'title' Expected : 'Siddharth Sarjerao Ughade' Actual : Siddharth Sarjerao Ughade]]>
+    </line>
+    <line>
+      <![CDATA[Verify 'id' Expected : '101' Actual : 101]]>
+    </line>
+    <line>
+      <![CDATA[Verify field 'body' should not be present in JSON response]]>
+    </line>
+    <line>
+      <![CDATA[Verify field 'userId' should not be present in JSON response]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason body includes only one field. 
+Expected Result: 1. Response Status code should be 201, It should create data successfully.
+2. Response to the API should be 'title' & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts Done! ]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason's body is BLANK.
+Expected Result: 1. Response Status code should be 201, It should create data successfully
+2. Response to the API should be 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts Started ]]>
+    </line>
+    <line>
+      <![CDATA[Building JSON Body {  "" : null }]]>
+    </line>
+    <line>
+      <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'body' : Expected 'harum non quasi et ratione\ntempore iure ex voluptates in ratione\nharum architecto fugit inventore cupiditate\nvoluptates magni quo et' Actual : 'harum non quasi et ratione\ntempore iure ex voluptates in ratione\nharum architecto fugit inventore cupiditate\nvoluptates magni quo et']]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request with valid postid
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify last record in response Testcase ID : Get all data for post id and verify data Done!! ]]>
+    </line>
+    <line>
+      <![CDATA[Feature NEGATIVE : 
+Step To Execute : Send Request with valid postid
+Expected Result: 1. API should return as response of 5 postid's data.
+2. Search for 'id' which is DOES NOT present in response, verify that 'name', 'email' & 'body' should be blank Testcase ID : Get all data for post id and verify data For API : https://jsonplaceholder.typicode.com/comments?postId=1 Started ]]>
+    </line>
+    <line>
+      <![CDATA[Verifying number of records return by API]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'title' : Expected '' Actual : '']]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'body' for userid 0]]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'name' for postId 1]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'body' : Expected '' Actual : '']]>
+    </line>
+    <line>
+      <![CDATA[Feature NEGATIVE : 
+Step To Execute : Send Request.  
+Expected Result: 1. API should return as response of 100 userId's data.
+2. Search for userId which is not present in response, so 'title' & 'body' should be BLANK Testcase ID : Get all data for user id and verify data Done!! ]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request by passing valid userId.  
+Expected Result: 1. API should return as response for single userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given user id & id Testcase ID : Get all data for user id and verify data For API : https://jsonplaceholder.typicode.com/posts/1 Started ]]>
+    </line>
+    <line>
+      <![CDATA[Verifying number of records return by API]]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'title' for userid 1]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'name' : Expected '' Actual : '']]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'name' for postId 1]]>
+    </line>
+    <line>
+      <![CDATA[Response Code from API : 201]]>
+    </line>
+    <line>
+      <![CDATA[Response from API : {
+  "": null,
+  "id": 101
+}]]>
+    </line>
+    <line>
+      <![CDATA[Verify 'id' Expected : '101' Actual : 101]]>
+    </line>
+    <line>
+      <![CDATA[Verify field 'title' should not be present in JSON response]]>
+    </line>
+    <line>
+      <![CDATA[Verify field 'body' should not be present in JSON response]]>
+    </line>
+    <line>
+      <![CDATA[Verify field 'userId' should not be present in JSON response]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason's body is BLANK.
+Expected Result: 1. Response Status code should be 201, It should create data successfully
+2. Response to the API should be 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts Done! ]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes all 4 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'title', 'body', 'userid' & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Started ]]>
+    </line>
+    <line>
+      <![CDATA[Building JSON Body {  "id" : "1",  "title" : "Siddharth Sarjerao Ughade",  "body" : "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad",  "userId" : 102 }]]>
+    </line>
+    <line>
+      <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts/1]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'email' : Expected '' Actual : '']]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'body' for postId 1]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'title' : Expected 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit' Actual : 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit']]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'body' for userid 1]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'body' : Expected '' Actual : '']]>
+    </line>
+    <line>
+      <![CDATA[Feature NEGATIVE : 
+Step To Execute : Send Request with valid postid
+Expected Result: 1. API should return as response of 5 postid's data.
+2. Search for 'id' which is DOES NOT present in response, verify that 'name', 'email' & 'body' should be blank Testcase ID : Get all data for post id and verify data Done!! ]]>
+    </line>
+    <line>
+      <![CDATA[Feature NEGATIVE :
+Step To Execute : Send Request with invalid postid
+Expected Result: 1. API should NOT return any response, so number of data in response should be 0
+2. Search for 'id' which is DOES NOT present in response, verify that 'name', 'email' & 'body' should be blank Testcase ID : Get all data for post id and verify data For API : https://jsonplaceholder.typicode.com/comments?postId=0 Started ]]>
+    </line>
+    <line>
+      <![CDATA[Verifying number of records return by API]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'body' : Expected 'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto' Actual : 'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto']]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request by passing valid userId.  
+Expected Result: 1. API should return as response for single userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given user id & id Testcase ID : Get all data for user id and verify data Done!! ]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request by passing valid userId.  
+Expected Result: 1. API should return as response for single userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given user id & id Testcase ID : Get all data for user id and verify data For API : https://jsonplaceholder.typicode.com/posts/10 Started ]]>
+    </line>
+    <line>
+      <![CDATA[Verifying number of records return by API]]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'name' for postId 1]]>
+    </line>
+    <line>
+      <![CDATA[Response Code from API : 200]]>
+    </line>
+    <line>
+      <![CDATA[Response from API : {
+  "id": 1,
+  "title": "Siddharth Sarjerao Ughade",
+  "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad",
+  "userId": 102
+}]]>
+    </line>
+    <line>
+      <![CDATA[Verify 'id' Expected : '1' Actual : 1]]>
+    </line>
+    <line>
+      <![CDATA[Verify 'title' Expected : 'Siddharth Sarjerao Ughade' Actual : Siddharth Sarjerao Ughade]]>
+    </line>
+    <line>
+      <![CDATA[Verify 'body' Expected : 'et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad' Actual : et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad]]>
+    </line>
+    <line>
+      <![CDATA[Verify 'userId' Expected : '102' Actual : 102]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes all 4 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'title', 'body', 'userid' & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Done! ]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes only 3 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'title', 'body' & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Started ]]>
+    </line>
+    <line>
+      <![CDATA[Building JSON Body {  "id" : "1",  "title" : "Siddharth Sarjerao Ughade",  "body" : "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad" }]]>
+    </line>
+    <line>
+      <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts/1]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'name' : Expected '' Actual : '']]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'name' for postId 1]]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'title' for userid 1]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'email' : Expected '' Actual : '']]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'body' for postId 1]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'title' : Expected 'optio molestias id quia eum' Actual : 'optio molestias id quia eum']]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'body' for userid 1]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'body' : Expected '' Actual : '']]>
+    </line>
+    <line>
+      <![CDATA[Feature NEGATIVE :
+Step To Execute : Send Request with invalid postid
+Expected Result: 1. API should NOT return any response, so number of data in response should be 0
+2. Search for 'id' which is DOES NOT present in response, verify that 'name', 'email' & 'body' should be blank Testcase ID : Get all data for post id and verify data Done!! ]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request with valid postid & comments
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify 1st record in response Testcase ID : Get all data for post id and verify data For API : https://jsonplaceholder.typicode.com/posts/2/comments Started ]]>
+    </line>
+    <line>
+      <![CDATA[Verifying number of records return by API]]>
+    </line>
+    <line>
+      <![CDATA[Response Code from API : 200]]>
+    </line>
+    <line>
+      <![CDATA[Response from API : {
+  "id": 1,
+  "title": "Siddharth Sarjerao Ughade",
+  "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad"
+}]]>
+    </line>
+    <line>
+      <![CDATA[Verify 'id' Expected : '1' Actual : 1]]>
+    </line>
+    <line>
+      <![CDATA[Verify 'title' Expected : 'Siddharth Sarjerao Ughade' Actual : Siddharth Sarjerao Ughade]]>
+    </line>
+    <line>
+      <![CDATA[Verify 'body' Expected : 'et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad' Actual : et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad]]>
+    </line>
+    <line>
+      <![CDATA[Verify field 'userId' should not be present in JSON response]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes only 3 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'title', 'body' & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Done! ]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes only 2 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'title' & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Started ]]>
+    </line>
+    <line>
+      <![CDATA[Building JSON Body {  "id" : "1",  "title" : "Siddharth Sarjerao Ughade" }]]>
+    </line>
+    <line>
+      <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts/1]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'body' : Expected 'quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error' Actual : 'quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error']]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request by passing valid userId.  
+Expected Result: 1. API should return as response for single userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given user id & id Testcase ID : Get all data for user id and verify data Done!! ]]>
+    </line>
+    <line>
+      <![CDATA[Feature NEGATIVE :
+Step To Execute : Send Request by passing invalid userId
+Expected Result: 1. API should NOT return any data for invalid userId's data.
+2. 'title' & 'body' should be BLANK Testcase ID : Get all data for user id and verify data For API : https://jsonplaceholder.typicode.com/posts/0 Started ]]>
+    </line>
+    <line>
+      <![CDATA[Verifying number of records return by API]]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'name' for postId 2]]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'title' for userid 0]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'name' : Expected 'et fugit eligendi deleniti quidem qui sint nihil autem' Actual : 'et fugit eligendi deleniti quidem qui sint nihil autem']]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'name' for postId 2]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'title' : Expected '' Actual : '']]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'body' for userid 0]]>
+    </line>
+    <line>
+      <![CDATA[Response Code from API : 200]]>
+    </line>
+    <line>
+      <![CDATA[Response from API : {
+  "id": 1,
+  "title": "Siddharth Sarjerao Ughade"
+}]]>
+    </line>
+    <line>
+      <![CDATA[Verify 'id' Expected : '1' Actual : 1]]>
+    </line>
+    <line>
+      <![CDATA[Verify 'title' Expected : 'Siddharth Sarjerao Ughade' Actual : Siddharth Sarjerao Ughade]]>
+    </line>
+    <line>
+      <![CDATA[Verify field 'userId' should not be present in JSON response]]>
+    </line>
+    <line>
+      <![CDATA[Verify field 'body' should not be present in JSON response]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes only 2 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'title' & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Done! ]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes only 1 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Started ]]>
+    </line>
+    <line>
+      <![CDATA[Building JSON Body {  "id" : "1" }]]>
+    </line>
+    <line>
+      <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts/1]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'email' : Expected 'Presley.Mueller@myrl.com' Actual : 'Presley.Mueller@myrl.com']]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'body' for postId 2]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'body' : Expected '' Actual : '']]>
+    </line>
+    <line>
+      <![CDATA[Feature NEGATIVE :
+Step To Execute : Send Request by passing invalid userId
+Expected Result: 1. API should NOT return any data for invalid userId's data.
+2. 'title' & 'body' should be BLANK Testcase ID : Get all data for user id and verify data Done!! ]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'body' : Expected 'doloribus at sed quis culpa deserunt consectetur qui praesentium\naccusamus fugiat dicta\nvoluptatem rerum ut voluptate autem\nvoluptatem repellendus aspernatur dolorem in' Actual : 'doloribus at sed quis culpa deserunt consectetur qui praesentium\naccusamus fugiat dicta\nvoluptatem rerum ut voluptate autem\nvoluptatem repellendus aspernatur dolorem in']]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request with valid postid & comments
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify 1st record in response Testcase ID : Get all data for post id and verify data Done!! ]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request with valid postid & comments
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify last record in response Testcase ID : Get all data for post id and verify data For API : https://jsonplaceholder.typicode.com/posts/2/comments Started ]]>
+    </line>
+    <line>
+      <![CDATA[Verifying number of records return by API]]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'name' for postId 2]]>
+    </line>
+    <line>
+      <![CDATA[Response Code from API : 200]]>
+    </line>
+    <line>
+      <![CDATA[Response from API : {
+  "id": 1
+}]]>
+    </line>
+    <line>
+      <![CDATA[Verify 'id' Expected : '1' Actual : 1]]>
+    </line>
+    <line>
+      <![CDATA[Verify field 'userId' should not be present in JSON response]]>
+    </line>
+    <line>
+      <![CDATA[Verify field 'body' should not be present in JSON response]]>
+    </line>
+    <line>
+      <![CDATA[Verify field 'title' should not be present in JSON response]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes only 1 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Done! ]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body should be BLANK.
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Started ]]>
+    </line>
+    <line>
+      <![CDATA[Building JSON Body {  "" : null }]]>
+    </line>
+    <line>
+      <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts/1]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'name' : Expected 'eaque et deleniti atque tenetur ut quo ut' Actual : 'eaque et deleniti atque tenetur ut quo ut']]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'name' for postId 2]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'email' : Expected 'Carmen_Keeling@caroline.name' Actual : 'Carmen_Keeling@caroline.name']]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'body' for postId 2]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'body' : Expected 'voluptate iusto quis nobis reprehenderit ipsum amet nulla\nquia quas dolores velit et non\naut quia necessitatibus\nnostrum quaerat nulla et accusamus nisi facilis' Actual : 'voluptate iusto quis nobis reprehenderit ipsum amet nulla\nquia quas dolores velit et non\naut quia necessitatibus\nnostrum quaerat nulla et accusamus nisi facilis']]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request with valid postid & comments
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify last record in response Testcase ID : Get all data for post id and verify data Done!! ]]>
+    </line>
+    <line>
+      <![CDATA[Feature NEGATIVE :
+Step To Execute : Send Request with valid postid & comments
+Expected Result: 1. API should return as response to 5 postid's data.
+2. Searching for id which is not present in response, so it should return 'name', 'email' & 'body' as BLANK
+ Testcase ID : Get all data for post id and verify data For API : https://jsonplaceholder.typicode.com/posts/2/comments Started ]]>
+    </line>
+    <line>
+      <![CDATA[Verifying number of records return by API]]>
+    </line>
+    <line>
+      <![CDATA[Response Code from API : 200]]>
+    </line>
+    <line>
+      <![CDATA[Response from API : {
+  "": null,
+  "id": 1
+}]]>
+    </line>
+    <line>
+      <![CDATA[Verify 'id' Expected : '1' Actual : 1]]>
+    </line>
+    <line>
+      <![CDATA[Verify field 'userId' should not be present in JSON response]]>
+    </line>
+    <line>
+      <![CDATA[Verify field 'body' should not be present in JSON response]]>
+    </line>
+    <line>
+      <![CDATA[Verify field 'title' should not be present in JSON response]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body should be BLANK.
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Done! ]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with PATCH method. Jason body includes 1 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id', 'title', 'body' & 'userId' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Started ]]>
+    </line>
+    <line>
+      <![CDATA[Building JSON Body {  "title" : "sunt aut facere repellat provident occaecati excepturi optio reprehenderit" }]]>
+    </line>
+    <line>
+      <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts/1]]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'name' for postId 2]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'name' : Expected '' Actual : '']]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'name' for postId 2]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'email' : Expected '' Actual : '']]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'body' for postId 2]]>
+    </line>
+    <line>
+      <![CDATA[Response Code from API : 200]]>
+    </line>
+    <line>
+      <![CDATA[Response from API : {
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}]]>
+    </line>
+    <line>
+      <![CDATA[Verify 'id' Expected : '1' Actual : 1]]>
+    </line>
+    <line>
+      <![CDATA[Verify 'title' Expected : 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit' Actual : sunt aut facere repellat provident occaecati excepturi optio reprehenderit]]>
+    </line>
+    <line>
+      <![CDATA[Verify 'body' Expected : 'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto' Actual : quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto]]>
+    </line>
+    <line>
+      <![CDATA[Verify 'userId' Expected : '1' Actual : 1]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with PATCH method. Jason body includes 1 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id', 'title', 'body' & 'userId' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Done! ]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with PATCH method. Jason body should be BLANK
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id', 'title', 'body' & 'userId' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Started ]]>
+    </line>
+    <line>
+      <![CDATA[Building JSON Body {  "" : null }]]>
+    </line>
+    <line>
+      <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts/1]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'body' : Expected '' Actual : '']]>
+    </line>
+    <line>
+      <![CDATA[Feature NEGATIVE :
+Step To Execute : Send Request with valid postid & comments
+Expected Result: 1. API should return as response to 5 postid's data.
+2. Searching for id which is not present in response, so it should return 'name', 'email' & 'body' as BLANK
+ Testcase ID : Get all data for post id and verify data Done!! ]]>
+    </line>
+    <line>
+      <![CDATA[Feature NEGATIVE :
+Step To Execute : Send Request with Invalid postid & comments
+Expected Result: 1. API should NOT return any response.
+2. 'name', 'email' & 'body' should be BLANK Testcase ID : Get all data for post id and verify data For API : https://jsonplaceholder.typicode.com/posts/0/comments Started ]]>
+    </line>
+    <line>
+      <![CDATA[Verifying number of records return by API]]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'name' for postId 1]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'name' : Expected '' Actual : '']]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'name' for postId 1]]>
+    </line>
+    <line>
+      <![CDATA[Response Code from API : 200]]>
+    </line>
+    <line>
+      <![CDATA[Response from API : {
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
+  "": null
+}]]>
+    </line>
+    <line>
+      <![CDATA[Verify 'id' Expected : '1' Actual : 1]]>
+    </line>
+    <line>
+      <![CDATA[Verify 'title' Expected : 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit' Actual : sunt aut facere repellat provident occaecati excepturi optio reprehenderit]]>
+    </line>
+    <line>
+      <![CDATA[Verify 'body' Expected : 'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto' Actual : quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto]]>
+    </line>
+    <line>
+      <![CDATA[Verify 'userId' Expected : '1' Actual : 1]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with PATCH method. Jason body should be BLANK
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id', 'title', 'body' & 'userId' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Done! ]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with DELETE method. Jason body should be BLANK
+Expected Result: 1. Response Status code should be 200
+2. Json response should be BLANK Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Started ]]>
+    </line>
+    <line>
+      <![CDATA[Building JSON Body {  "" : null }]]>
+    </line>
+    <line>
+      <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts/1]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'email' : Expected '' Actual : '']]>
+    </line>
+    <line>
+      <![CDATA[Extracting 'body' for postId 1]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'body' : Expected '' Actual : '']]>
+    </line>
+    <line>
+      <![CDATA[Feature NEGATIVE :
+Step To Execute : Send Request with Invalid postid & comments
+Expected Result: 1. API should NOT return any response.
+2. 'name', 'email' & 'body' should be BLANK Testcase ID : Get all data for post id and verify data Done!! ]]>
+    </line>
+    <line>
+      <![CDATA[Response Code from API : 200]]>
+    </line>
+    <line>
+      <![CDATA[Response from API : {}]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with DELETE method. Jason body should be BLANK
+Expected Result: 1. Response Status code should be 200
+2. Json response should be BLANK Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Done! ]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with invalid id with POST method
+Expected Result: 1. Response Status code should be 404
+2. Json response should be BLANK Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/101 Started ]]>
+    </line>
+    <line>
+      <![CDATA[Building JSON Body {  "" : null }]]>
+    </line>
+    <line>
+      <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts/101]]>
+    </line>
+    <line>
+      <![CDATA[Response Code from API : 404]]>
+    </line>
+    <line>
+      <![CDATA[Response from API : {}]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with invalid id with POST method
+Expected Result: 1. Response Status code should be 404
+2. Json response should be BLANK Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/101 Done! ]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with invalid id with PUT method
+Expected Result: 1. Response Status code should be 500
+2. Json response should be BLANK Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/101 Started ]]>
+    </line>
+    <line>
+      <![CDATA[Building JSON Body {  "" : null }]]>
+    </line>
+    <line>
+      <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts/101]]>
+    </line>
+    <line>
+      <![CDATA[Response Code from API : 500]]>
+    </line>
+    <line>
+      <![CDATA[Response from API : TypeError: Cannot read properties of undefined (reading 'id')
+    at update (/app/node_modules/json-server/lib/server/router/plural.js:262:24)
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at next (/app/node_modules/express/lib/router/route.js:137:13)
+    at next (/app/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/app/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at /app/node_modules/express/lib/router/index.js:281:22
+    at param (/app/node_modules/express/lib/router/index.js:354:14)
+    at param (/app/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/app/node_modules/express/lib/router/index.js:410:3)]]>
+    </line>
+    <line>
+      <![CDATA[API has Internal server error]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with invalid id with PUT method
+Expected Result: 1. Response Status code should be 500
+2. Json response should be BLANK Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/101 Done! ]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with invalid id with PATCH method
+Expected Result: 1. Response Status code should be 200
+2. Json response should be BLANK Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/101 Started ]]>
+    </line>
+    <line>
+      <![CDATA[Building JSON Body {  "" : null }]]>
+    </line>
+    <line>
+      <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts/101]]>
+    </line>
+    <line>
+      <![CDATA[Response Code from API : 200]]>
+    </line>
+    <line>
+      <![CDATA[Response from API : {
+  "": null
+}]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with invalid id with PATCH method
+Expected Result: 1. Response Status code should be 200
+2. Json response should be BLANK Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/101 Done! ]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with invalid id with DELETE method
+Expected Result: 1. Response Status code should be 200
+2. Json response should be BLANK Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/101 Started ]]>
+    </line>
+    <line>
+      <![CDATA[Building JSON Body {  "" : null }]]>
+    </line>
+    <line>
+      <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts/101]]>
+    </line>
+    <line>
+      <![CDATA[Response Code from API : 200]]>
+    </line>
+    <line>
+      <![CDATA[Response from API : {}]]>
+    </line>
+    <line>
+      <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with invalid id with DELETE method
+Expected Result: 1. Response Status code should be 200
+2. Json response should be BLANK Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/101 Done! ]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-01-16T15:53:11 CET" name="REST API Automation Test Suite" finished-at="2023-01-16T15:53:18 CET" duration-ms="7151">
+    <groups>
+      <group name="RestRequest">
+        <method signature="testRestAPI.testRequestAndResponse(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@9ed238c]" name="testRequestAndResponse" class="scripts.testRestAPI"/>
+      </group> <!-- RestRequest -->
+      <group name="postId">
+        <method signature="testRestAPI.testVerifyPostIDData(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@1c80e49b]" name="testVerifyPostIDData" class="scripts.testRestAPI"/>
+      </group> <!-- postId -->
+      <group name="userId">
+        <method signature="testRestAPI.testVerifyUserIDData(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@5b40ceb]" name="testVerifyUserIDData" class="scripts.testRestAPI"/>
+      </group> <!-- userId -->
+    </groups>
+    <test started-at="2023-01-16T15:53:11 CET" name="Test to verify API with userId" finished-at="2023-01-16T15:53:15 CET" duration-ms="4261">
+      <class name="scripts.testRestAPI">
+        <test-method signature="testVerifyUserIDData(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@5b40ceb]" started-at="2023-01-16T15:53:12 CET" name="testVerifyUserIDData" data-provider="getDataProviderDetails" finished-at="2023-01-16T15:53:13 CET" duration-ms="1497" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id=1, Url=posts, Search_Field_Name=userId, SrNo=1, API_URL=https://jsonplaceholder.typicode.com/posts, Number_of_Rows=100, Domain=jsonplaceholder.typicode.com, body=quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto, userId=1, Texecute=Yes, Protocol=https://, Feature=POSITIVE :
+Step To Execute : Send Request.  
+Expected Result: 1. API should return as response of 100 userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given userid & id, title=sunt aut facere repellat provident occaecati excepturi optio reprehenderit, Testcase_ID=Get all data for user id and verify data}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request.  
+Expected Result: 1. API should return as response of 100 userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given userid & id Testcase ID : Get all data for user id and verify data For API : https://jsonplaceholder.typicode.com/posts Started ]]>
+            </line>
+            <line>
+              <![CDATA[Verifying number of records return by API]]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'title' for userid 1]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'title' : Expected 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit' Actual : 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit']]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'body' for userid 1]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'body' : Expected 'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto' Actual : 'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto']]>
+            </line>
+            <line>
+              <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request.  
+Expected Result: 1. API should return as response of 100 userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given userid & id Testcase ID : Get all data for user id and verify data Done!! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testVerifyUserIDData -->
+        <test-method signature="testVerifyUserIDData(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@5b40ceb]" started-at="2023-01-16T15:53:13 CET" name="testVerifyUserIDData" data-provider="getDataProviderDetails" finished-at="2023-01-16T15:53:14 CET" duration-ms="372" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id=100, Url=posts, Search_Field_Name=userId, SrNo=2, API_URL=https://jsonplaceholder.typicode.com/posts, Number_of_Rows=100, Domain=jsonplaceholder.typicode.com, body=cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam et distinctio eum\naccusamus ratione error aut, userId=10, Texecute=Yes, Protocol=https://, Feature=POSITIVE :
+Step To Execute : Send Request.  
+Expected Result: 1. API should return as response of 100 userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given user id & id, title=at nam consequatur ea labore ea harum, Testcase_ID=Get all data for user id and verify data}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request.  
+Expected Result: 1. API should return as response of 100 userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given user id & id Testcase ID : Get all data for user id and verify data For API : https://jsonplaceholder.typicode.com/posts Started ]]>
+            </line>
+            <line>
+              <![CDATA[Verifying number of records return by API]]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'title' for userid 10]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'title' : Expected 'at nam consequatur ea labore ea harum' Actual : 'at nam consequatur ea labore ea harum']]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'body' for userid 10]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'body' : Expected 'cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam et distinctio eum\naccusamus ratione error aut' Actual : 'cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam et distinctio eum\naccusamus ratione error aut']]>
+            </line>
+            <line>
+              <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request.  
+Expected Result: 1. API should return as response of 100 userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given user id & id Testcase ID : Get all data for user id and verify data Done!! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testVerifyUserIDData -->
+        <test-method signature="testVerifyUserIDData(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@5b40ceb]" started-at="2023-01-16T15:53:14 CET" name="testVerifyUserIDData" data-provider="getDataProviderDetails" finished-at="2023-01-16T15:53:14 CET" duration-ms="364" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id=100, Url=posts, Search_Field_Name=userId, SrNo=3, API_URL=https://jsonplaceholder.typicode.com/posts, Number_of_Rows=100, Domain=jsonplaceholder.typicode.com, body=, userId=0, Texecute=Yes, Protocol=https://, Feature=NEGATIVE : 
+Step To Execute : Send Request.  
+Expected Result: 1. API should return as response of 100 userId's data.
+2. Search for userId which is not present in response, so 'title' & 'body' should be BLANK, title=, Testcase_ID=Get all data for user id and verify data}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Feature NEGATIVE : 
+Step To Execute : Send Request.  
+Expected Result: 1. API should return as response of 100 userId's data.
+2. Search for userId which is not present in response, so 'title' & 'body' should be BLANK Testcase ID : Get all data for user id and verify data For API : https://jsonplaceholder.typicode.com/posts Started ]]>
+            </line>
+            <line>
+              <![CDATA[Verifying number of records return by API]]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'title' for userid 0]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'title' : Expected '' Actual : '']]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'body' for userid 0]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'body' : Expected '' Actual : '']]>
+            </line>
+            <line>
+              <![CDATA[Feature NEGATIVE : 
+Step To Execute : Send Request.  
+Expected Result: 1. API should return as response of 100 userId's data.
+2. Search for userId which is not present in response, so 'title' & 'body' should be BLANK Testcase ID : Get all data for user id and verify data Done!! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testVerifyUserIDData -->
+        <test-method signature="testVerifyUserIDData(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@5b40ceb]" started-at="2023-01-16T15:53:14 CET" name="testVerifyUserIDData" data-provider="getDataProviderDetails" finished-at="2023-01-16T15:53:14 CET" duration-ms="385" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id=1, Url=posts/1, Search_Field_Name=userId, SrNo=4, API_URL=https://jsonplaceholder.typicode.com/posts/1, Number_of_Rows=1, Domain=jsonplaceholder.typicode.com, body=quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto, userId=1, Texecute=Yes, Protocol=https://, Feature=POSITIVE :
+Step To Execute : Send Request by passing valid userId.  
+Expected Result: 1. API should return as response for single userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given user id & id, title=sunt aut facere repellat provident occaecati excepturi optio reprehenderit, Testcase_ID=Get all data for user id and verify data}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request by passing valid userId.  
+Expected Result: 1. API should return as response for single userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given user id & id Testcase ID : Get all data for user id and verify data For API : https://jsonplaceholder.typicode.com/posts/1 Started ]]>
+            </line>
+            <line>
+              <![CDATA[Verifying number of records return by API]]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'title' for userid 1]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'title' : Expected 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit' Actual : 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit']]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'body' for userid 1]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'body' : Expected 'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto' Actual : 'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto']]>
+            </line>
+            <line>
+              <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request by passing valid userId.  
+Expected Result: 1. API should return as response for single userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given user id & id Testcase ID : Get all data for user id and verify data Done!! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testVerifyUserIDData -->
+        <test-method signature="testVerifyUserIDData(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@5b40ceb]" started-at="2023-01-16T15:53:14 CET" name="testVerifyUserIDData" data-provider="getDataProviderDetails" finished-at="2023-01-16T15:53:15 CET" duration-ms="571" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id=10, Url=posts/10, Search_Field_Name=userId, SrNo=5, API_URL=https://jsonplaceholder.typicode.com/posts/10, Number_of_Rows=1, Domain=jsonplaceholder.typicode.com, body=quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error, userId=1, Texecute=Yes, Protocol=https://, Feature=POSITIVE :
+Step To Execute : Send Request by passing valid userId.  
+Expected Result: 1. API should return as response for single userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given user id & id, title=optio molestias id quia eum, Testcase_ID=Get all data for user id and verify data}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request by passing valid userId.  
+Expected Result: 1. API should return as response for single userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given user id & id Testcase ID : Get all data for user id and verify data For API : https://jsonplaceholder.typicode.com/posts/10 Started ]]>
+            </line>
+            <line>
+              <![CDATA[Verifying number of records return by API]]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'title' for userid 1]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'title' : Expected 'optio molestias id quia eum' Actual : 'optio molestias id quia eum']]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'body' for userid 1]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'body' : Expected 'quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error' Actual : 'quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error']]>
+            </line>
+            <line>
+              <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request by passing valid userId.  
+Expected Result: 1. API should return as response for single userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given user id & id Testcase ID : Get all data for user id and verify data Done!! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testVerifyUserIDData -->
+        <test-method signature="testVerifyUserIDData(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@5b40ceb]" started-at="2023-01-16T15:53:15 CET" name="testVerifyUserIDData" data-provider="getDataProviderDetails" finished-at="2023-01-16T15:53:15 CET" duration-ms="353" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id=0, Url=posts/0, Search_Field_Name=userId, SrNo=6, API_URL=https://jsonplaceholder.typicode.com/posts/0, Number_of_Rows=1, Domain=jsonplaceholder.typicode.com, body=, userId=0, Texecute=Yes, Protocol=https://, Feature=NEGATIVE :
+Step To Execute : Send Request by passing invalid userId
+Expected Result: 1. API should NOT return any data for invalid userId's data.
+2. 'title' & 'body' should be BLANK, title=, Testcase_ID=Get all data for user id and verify data}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Feature NEGATIVE :
+Step To Execute : Send Request by passing invalid userId
+Expected Result: 1. API should NOT return any data for invalid userId's data.
+2. 'title' & 'body' should be BLANK Testcase ID : Get all data for user id and verify data For API : https://jsonplaceholder.typicode.com/posts/0 Started ]]>
+            </line>
+            <line>
+              <![CDATA[Verifying number of records return by API]]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'title' for userid 0]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'title' : Expected '' Actual : '']]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'body' for userid 0]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'body' : Expected '' Actual : '']]>
+            </line>
+            <line>
+              <![CDATA[Feature NEGATIVE :
+Step To Execute : Send Request by passing invalid userId
+Expected Result: 1. API should NOT return any data for invalid userId's data.
+2. 'title' & 'body' should be BLANK Testcase ID : Get all data for user id and verify data Done!! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testVerifyUserIDData -->
+      </class> <!-- scripts.testRestAPI -->
+    </test> <!-- Test to verify API with userId -->
+    <test started-at="2023-01-16T15:53:11 CET" name="Test to verify API with postId" finished-at="2023-01-16T15:53:17 CET" duration-ms="5716">
+      <class name="scripts.testRestAPI">
+        <test-method signature="testVerifyPostIDData(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@1c80e49b]" started-at="2023-01-16T15:53:12 CET" name="testVerifyPostIDData" data-provider="getDataProviderDetails" finished-at="2023-01-16T15:53:13 CET" duration-ms="1627" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=id labore ex et quam laborum, id=1, Url=?postId=1, postId=1, Search_Field_Name=postId, SrNo=1, API_URL=https://jsonplaceholder.typicode.com/comments?postId=1, Number_of_Rows=5, Domain=jsonplaceholder.typicode.com, body=laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium, Texecute=Yes, email=Eliseo@gardner.biz, Protocol=https://, Feature=POSITIVE :
+Step To Execute : Send Request with valid postid
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify 1st record in response, Testcase_ID=Get all data for post id and verify data}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request with valid postid
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify 1st record in response Testcase ID : Get all data for post id and verify data For API : https://jsonplaceholder.typicode.com/comments?postId=1 Started ]]>
+            </line>
+            <line>
+              <![CDATA[Verifying number of records return by API]]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'name' for postId 1]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'name' : Expected 'id labore ex et quam laborum' Actual : 'id labore ex et quam laborum']]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'name' for postId 1]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'email' : Expected 'Eliseo@gardner.biz' Actual : 'Eliseo@gardner.biz']]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'body' for postId 1]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'body' : Expected 'laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium' Actual : 'laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium']]>
+            </line>
+            <line>
+              <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request with valid postid
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify 1st record in response Testcase ID : Get all data for post id and verify data Done!! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testVerifyPostIDData -->
+        <test-method signature="testVerifyPostIDData(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@1c80e49b]" started-at="2023-01-16T15:53:13 CET" name="testVerifyPostIDData" data-provider="getDataProviderDetails" finished-at="2023-01-16T15:53:14 CET" duration-ms="491" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=vero eaque aliquid doloribus et culpa, id=5, Url=?postId=1, postId=1, Search_Field_Name=postId, SrNo=2, API_URL=https://jsonplaceholder.typicode.com/comments?postId=1, Number_of_Rows=5, Domain=jsonplaceholder.typicode.com, body=harum non quasi et ratione\ntempore iure ex voluptates in ratione\nharum architecto fugit inventore cupiditate\nvoluptates magni quo et, Texecute=Yes, email=Hayden@althea.biz, Protocol=https://, Feature=POSITIVE :
+Step To Execute : Send Request with valid postid
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify last record in response, Testcase_ID=Get all data for post id and verify data}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request with valid postid
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify last record in response Testcase ID : Get all data for post id and verify data For API : https://jsonplaceholder.typicode.com/comments?postId=1 Started ]]>
+            </line>
+            <line>
+              <![CDATA[Verifying number of records return by API]]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'name' for postId 1]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'name' : Expected 'vero eaque aliquid doloribus et culpa' Actual : 'vero eaque aliquid doloribus et culpa']]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'name' for postId 1]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'email' : Expected 'Hayden@althea.biz' Actual : 'Hayden@althea.biz']]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'body' for postId 1]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'body' : Expected 'harum non quasi et ratione\ntempore iure ex voluptates in ratione\nharum architecto fugit inventore cupiditate\nvoluptates magni quo et' Actual : 'harum non quasi et ratione\ntempore iure ex voluptates in ratione\nharum architecto fugit inventore cupiditate\nvoluptates magni quo et']]>
+            </line>
+            <line>
+              <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request with valid postid
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify last record in response Testcase ID : Get all data for post id and verify data Done!! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testVerifyPostIDData -->
+        <test-method signature="testVerifyPostIDData(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@1c80e49b]" started-at="2023-01-16T15:53:14 CET" name="testVerifyPostIDData" data-provider="getDataProviderDetails" finished-at="2023-01-16T15:53:14 CET" duration-ms="482" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=, id=6, Url=?postId=1, postId=1, Search_Field_Name=postId, SrNo=3, API_URL=https://jsonplaceholder.typicode.com/comments?postId=1, Number_of_Rows=5, Domain=jsonplaceholder.typicode.com, body=, Texecute=Yes, email=, Protocol=https://, Feature=NEGATIVE : 
+Step To Execute : Send Request with valid postid
+Expected Result: 1. API should return as response of 5 postid's data.
+2. Search for 'id' which is DOES NOT present in response, verify that 'name', 'email' & 'body' should be blank, Testcase_ID=Get all data for post id and verify data}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Feature NEGATIVE : 
+Step To Execute : Send Request with valid postid
+Expected Result: 1. API should return as response of 5 postid's data.
+2. Search for 'id' which is DOES NOT present in response, verify that 'name', 'email' & 'body' should be blank Testcase ID : Get all data for post id and verify data For API : https://jsonplaceholder.typicode.com/comments?postId=1 Started ]]>
+            </line>
+            <line>
+              <![CDATA[Verifying number of records return by API]]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'name' for postId 1]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'name' : Expected '' Actual : '']]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'name' for postId 1]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'email' : Expected '' Actual : '']]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'body' for postId 1]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'body' : Expected '' Actual : '']]>
+            </line>
+            <line>
+              <![CDATA[Feature NEGATIVE : 
+Step To Execute : Send Request with valid postid
+Expected Result: 1. API should return as response of 5 postid's data.
+2. Search for 'id' which is DOES NOT present in response, verify that 'name', 'email' & 'body' should be blank Testcase ID : Get all data for post id and verify data Done!! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testVerifyPostIDData -->
+        <test-method signature="testVerifyPostIDData(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@1c80e49b]" started-at="2023-01-16T15:53:14 CET" name="testVerifyPostIDData" data-provider="getDataProviderDetails" finished-at="2023-01-16T15:53:15 CET" duration-ms="484" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=, id=6, Url=?postId=0, postId=1, Search_Field_Name=postId, SrNo=4, API_URL=https://jsonplaceholder.typicode.com/comments?postId=0, Number_of_Rows=0, Domain=jsonplaceholder.typicode.com, body=, Texecute=Yes, email=, Protocol=https://, Feature=NEGATIVE :
+Step To Execute : Send Request with invalid postid
+Expected Result: 1. API should NOT return any response, so number of data in response should be 0
+2. Search for 'id' which is DOES NOT present in response, verify that 'name', 'email' & 'body' should be blank, Testcase_ID=Get all data for post id and verify data}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Feature NEGATIVE :
+Step To Execute : Send Request with invalid postid
+Expected Result: 1. API should NOT return any response, so number of data in response should be 0
+2. Search for 'id' which is DOES NOT present in response, verify that 'name', 'email' & 'body' should be blank Testcase ID : Get all data for post id and verify data For API : https://jsonplaceholder.typicode.com/comments?postId=0 Started ]]>
+            </line>
+            <line>
+              <![CDATA[Verifying number of records return by API]]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'name' for postId 1]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'name' : Expected '' Actual : '']]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'name' for postId 1]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'email' : Expected '' Actual : '']]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'body' for postId 1]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'body' : Expected '' Actual : '']]>
+            </line>
+            <line>
+              <![CDATA[Feature NEGATIVE :
+Step To Execute : Send Request with invalid postid
+Expected Result: 1. API should NOT return any response, so number of data in response should be 0
+2. Search for 'id' which is DOES NOT present in response, verify that 'name', 'email' & 'body' should be blank Testcase ID : Get all data for post id and verify data Done!! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testVerifyPostIDData -->
+        <test-method signature="testVerifyPostIDData(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@1c80e49b]" started-at="2023-01-16T15:53:15 CET" name="testVerifyPostIDData" data-provider="getDataProviderDetails" finished-at="2023-01-16T15:53:15 CET" duration-ms="503" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=et fugit eligendi deleniti quidem qui sint nihil autem, id=6, Url=posts/2/comments, postId=2, Search_Field_Name=postId, SrNo=5, API_URL=https://jsonplaceholder.typicode.com/posts/2/comments, Number_of_Rows=5, Domain=jsonplaceholder.typicode.com, body=doloribus at sed quis culpa deserunt consectetur qui praesentium\naccusamus fugiat dicta\nvoluptatem rerum ut voluptate autem\nvoluptatem repellendus aspernatur dolorem in, Texecute=Yes, email=Presley.Mueller@myrl.com, Protocol=https://, Feature=POSITIVE :
+Step To Execute : Send Request with valid postid & comments
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify 1st record in response, Testcase_ID=Get all data for post id and verify data}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request with valid postid & comments
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify 1st record in response Testcase ID : Get all data for post id and verify data For API : https://jsonplaceholder.typicode.com/posts/2/comments Started ]]>
+            </line>
+            <line>
+              <![CDATA[Verifying number of records return by API]]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'name' for postId 2]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'name' : Expected 'et fugit eligendi deleniti quidem qui sint nihil autem' Actual : 'et fugit eligendi deleniti quidem qui sint nihil autem']]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'name' for postId 2]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'email' : Expected 'Presley.Mueller@myrl.com' Actual : 'Presley.Mueller@myrl.com']]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'body' for postId 2]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'body' : Expected 'doloribus at sed quis culpa deserunt consectetur qui praesentium\naccusamus fugiat dicta\nvoluptatem rerum ut voluptate autem\nvoluptatem repellendus aspernatur dolorem in' Actual : 'doloribus at sed quis culpa deserunt consectetur qui praesentium\naccusamus fugiat dicta\nvoluptatem rerum ut voluptate autem\nvoluptatem repellendus aspernatur dolorem in']]>
+            </line>
+            <line>
+              <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request with valid postid & comments
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify 1st record in response Testcase ID : Get all data for post id and verify data Done!! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testVerifyPostIDData -->
+        <test-method signature="testVerifyPostIDData(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@1c80e49b]" started-at="2023-01-16T15:53:15 CET" name="testVerifyPostIDData" data-provider="getDataProviderDetails" finished-at="2023-01-16T15:53:16 CET" duration-ms="467" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=eaque et deleniti atque tenetur ut quo ut, id=10, Url=posts/2/comments, postId=2, Search_Field_Name=postId, SrNo=6, API_URL=https://jsonplaceholder.typicode.com/posts/2/comments, Number_of_Rows=5, Domain=jsonplaceholder.typicode.com, body=voluptate iusto quis nobis reprehenderit ipsum amet nulla\nquia quas dolores velit et non\naut quia necessitatibus\nnostrum quaerat nulla et accusamus nisi facilis, Texecute=Yes, email=Carmen_Keeling@caroline.name, Protocol=https://, Feature=POSITIVE :
+Step To Execute : Send Request with valid postid & comments
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify last record in response, Testcase_ID=Get all data for post id and verify data}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request with valid postid & comments
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify last record in response Testcase ID : Get all data for post id and verify data For API : https://jsonplaceholder.typicode.com/posts/2/comments Started ]]>
+            </line>
+            <line>
+              <![CDATA[Verifying number of records return by API]]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'name' for postId 2]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'name' : Expected 'eaque et deleniti atque tenetur ut quo ut' Actual : 'eaque et deleniti atque tenetur ut quo ut']]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'name' for postId 2]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'email' : Expected 'Carmen_Keeling@caroline.name' Actual : 'Carmen_Keeling@caroline.name']]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'body' for postId 2]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'body' : Expected 'voluptate iusto quis nobis reprehenderit ipsum amet nulla\nquia quas dolores velit et non\naut quia necessitatibus\nnostrum quaerat nulla et accusamus nisi facilis' Actual : 'voluptate iusto quis nobis reprehenderit ipsum amet nulla\nquia quas dolores velit et non\naut quia necessitatibus\nnostrum quaerat nulla et accusamus nisi facilis']]>
+            </line>
+            <line>
+              <![CDATA[Feature POSITIVE :
+Step To Execute : Send Request with valid postid & comments
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify last record in response Testcase ID : Get all data for post id and verify data Done!! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testVerifyPostIDData -->
+        <test-method signature="testVerifyPostIDData(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@1c80e49b]" started-at="2023-01-16T15:53:16 CET" name="testVerifyPostIDData" data-provider="getDataProviderDetails" finished-at="2023-01-16T15:53:16 CET" duration-ms="477" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=, id=11, Url=posts/2/comments, postId=2, Search_Field_Name=postId, SrNo=7, API_URL=https://jsonplaceholder.typicode.com/posts/2/comments, Number_of_Rows=5, Domain=jsonplaceholder.typicode.com, body=, Texecute=Yes, email=, Protocol=https://, Feature=NEGATIVE :
+Step To Execute : Send Request with valid postid & comments
+Expected Result: 1. API should return as response to 5 postid's data.
+2. Searching for id which is not present in response, so it should return 'name', 'email' & 'body' as BLANK
+, Testcase_ID=Get all data for post id and verify data}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Feature NEGATIVE :
+Step To Execute : Send Request with valid postid & comments
+Expected Result: 1. API should return as response to 5 postid's data.
+2. Searching for id which is not present in response, so it should return 'name', 'email' & 'body' as BLANK
+ Testcase ID : Get all data for post id and verify data For API : https://jsonplaceholder.typicode.com/posts/2/comments Started ]]>
+            </line>
+            <line>
+              <![CDATA[Verifying number of records return by API]]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'name' for postId 2]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'name' : Expected '' Actual : '']]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'name' for postId 2]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'email' : Expected '' Actual : '']]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'body' for postId 2]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'body' : Expected '' Actual : '']]>
+            </line>
+            <line>
+              <![CDATA[Feature NEGATIVE :
+Step To Execute : Send Request with valid postid & comments
+Expected Result: 1. API should return as response to 5 postid's data.
+2. Searching for id which is not present in response, so it should return 'name', 'email' & 'body' as BLANK
+ Testcase ID : Get all data for post id and verify data Done!! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testVerifyPostIDData -->
+        <test-method signature="testVerifyPostIDData(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@1c80e49b]" started-at="2023-01-16T15:53:16 CET" name="testVerifyPostIDData" data-provider="getDataProviderDetails" finished-at="2023-01-16T15:53:17 CET" duration-ms="467" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=, id=6, Url=posts/0/comments, postId=1, Search_Field_Name=postId, SrNo=8, API_URL=https://jsonplaceholder.typicode.com/posts/0/comments, Number_of_Rows=0, Domain=jsonplaceholder.typicode.com, body=, Texecute=Yes, email=, Protocol=https://, Feature=NEGATIVE :
+Step To Execute : Send Request with Invalid postid & comments
+Expected Result: 1. API should NOT return any response.
+2. 'name', 'email' & 'body' should be BLANK, Testcase_ID=Get all data for post id and verify data}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Feature NEGATIVE :
+Step To Execute : Send Request with Invalid postid & comments
+Expected Result: 1. API should NOT return any response.
+2. 'name', 'email' & 'body' should be BLANK Testcase ID : Get all data for post id and verify data For API : https://jsonplaceholder.typicode.com/posts/0/comments Started ]]>
+            </line>
+            <line>
+              <![CDATA[Verifying number of records return by API]]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'name' for postId 1]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'name' : Expected '' Actual : '']]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'name' for postId 1]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'email' : Expected '' Actual : '']]>
+            </line>
+            <line>
+              <![CDATA[Extracting 'body' for postId 1]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'body' : Expected '' Actual : '']]>
+            </line>
+            <line>
+              <![CDATA[Feature NEGATIVE :
+Step To Execute : Send Request with Invalid postid & comments
+Expected Result: 1. API should NOT return any response.
+2. 'name', 'email' & 'body' should be BLANK Testcase ID : Get all data for post id and verify data Done!! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testVerifyPostIDData -->
+      </class> <!-- scripts.testRestAPI -->
+    </test> <!-- Test to verify API with postId -->
+    <test started-at="2023-01-16T15:53:11 CET" name="Test to verify REST API Request and response" finished-at="2023-01-16T15:53:18 CET" duration-ms="7151">
+      <class name="scripts.testRestAPI">
+        <test-method signature="testRequestAndResponse(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@9ed238c]" started-at="2023-01-16T15:53:12 CET" name="testRequestAndResponse" data-provider="getDataProviderDetails" finished-at="2023-01-16T15:53:13 CET" duration-ms="1369" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id="101", Url=posts, SrNo=1, Method=POST, Domain=jsonplaceholder.typicode.com, body="et iusto sed quo iure", ResponseCode=201, userId=102, FieldNamesShouldNotPresentInResponse=, ResponseFieldNamesToVerify=title;body;userId;id, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason body includes all 3 fields
+Expected Result: 1. Response Status code should be 201, It should create data successfully
+2. Response to the API should be 'title', 'body', 'userid' & 'id' and it should match with data mentioned in respective columns, title="Siddharth Sarjerao Ughade", FieldNames=title;body;userId, Testcase_ID=Request send and verify response}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason body includes all 3 fields
+Expected Result: 1. Response Status code should be 201, It should create data successfully
+2. Response to the API should be 'title', 'body', 'userid' & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts Started ]]>
+            </line>
+            <line>
+              <![CDATA[Building JSON Body {  "title" : "Siddharth Sarjerao Ughade",  "body" : "et iusto sed quo iure",  "userId" : 102 }]]>
+            </line>
+            <line>
+              <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts]]>
+            </line>
+            <line>
+              <![CDATA[Response Code from API : 201]]>
+            </line>
+            <line>
+              <![CDATA[Response from API : {
+  "title": "Siddharth Sarjerao Ughade",
+  "body": "et iusto sed quo iure",
+  "userId": 102,
+  "id": 101
+}]]>
+            </line>
+            <line>
+              <![CDATA[Verify 'title' Expected : 'Siddharth Sarjerao Ughade' Actual : Siddharth Sarjerao Ughade]]>
+            </line>
+            <line>
+              <![CDATA[Verify 'body' Expected : 'et iusto sed quo iure' Actual : et iusto sed quo iure]]>
+            </line>
+            <line>
+              <![CDATA[Verify 'userId' Expected : '102' Actual : 102]]>
+            </line>
+            <line>
+              <![CDATA[Verify 'id' Expected : '101' Actual : 101]]>
+            </line>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason body includes all 3 fields
+Expected Result: 1. Response Status code should be 201, It should create data successfully
+2. Response to the API should be 'title', 'body', 'userid' & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts Done! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRequestAndResponse -->
+        <test-method signature="testRequestAndResponse(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@9ed238c]" started-at="2023-01-16T15:53:13 CET" name="testRequestAndResponse" data-provider="getDataProviderDetails" finished-at="2023-01-16T15:53:14 CET" duration-ms="347" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id="101", Url=posts, SrNo=2, Method=POST, Domain=jsonplaceholder.typicode.com, body="et iusto sed quo iure", ResponseCode=201, userId=102, FieldNamesShouldNotPresentInResponse=userId, ResponseFieldNamesToVerify=title;body;id, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason body includes only two fields
+Expected Result: 1. Response Status code should be 201, It should create data successfully
+2. Response to the API should be 'title', 'body'  & 'id' and it should match with data mentioned in respective columns, title="Siddharth Sarjerao Ughade", FieldNames=title;body, Testcase_ID=Request send and verify response}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason body includes only two fields
+Expected Result: 1. Response Status code should be 201, It should create data successfully
+2. Response to the API should be 'title', 'body'  & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts Started ]]>
+            </line>
+            <line>
+              <![CDATA[Building JSON Body {  "title" : "Siddharth Sarjerao Ughade",  "body" : "et iusto sed quo iure" }]]>
+            </line>
+            <line>
+              <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts]]>
+            </line>
+            <line>
+              <![CDATA[Response Code from API : 201]]>
+            </line>
+            <line>
+              <![CDATA[Response from API : {
+  "title": "Siddharth Sarjerao Ughade",
+  "body": "et iusto sed quo iure",
+  "id": 101
+}]]>
+            </line>
+            <line>
+              <![CDATA[Verify 'title' Expected : 'Siddharth Sarjerao Ughade' Actual : Siddharth Sarjerao Ughade]]>
+            </line>
+            <line>
+              <![CDATA[Verify 'body' Expected : 'et iusto sed quo iure' Actual : et iusto sed quo iure]]>
+            </line>
+            <line>
+              <![CDATA[Verify 'id' Expected : '101' Actual : 101]]>
+            </line>
+            <line>
+              <![CDATA[Verify field 'userId' should not be present in JSON response]]>
+            </line>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason body includes only two fields
+Expected Result: 1. Response Status code should be 201, It should create data successfully
+2. Response to the API should be 'title', 'body'  & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts Done! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRequestAndResponse -->
+        <test-method signature="testRequestAndResponse(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@9ed238c]" started-at="2023-01-16T15:53:14 CET" name="testRequestAndResponse" data-provider="getDataProviderDetails" finished-at="2023-01-16T15:53:14 CET" duration-ms="332" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id="101", Url=posts, SrNo=3, Method=POST, Domain=jsonplaceholder.typicode.com, body=, ResponseCode=201, userId=102, FieldNamesShouldNotPresentInResponse=body;userId, ResponseFieldNamesToVerify=title;id, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason body includes only one field. 
+Expected Result: 1. Response Status code should be 201, It should create data successfully.
+2. Response to the API should be 'title' & 'id' and it should match with data mentioned in respective columns, title="Siddharth Sarjerao Ughade", FieldNames=title, Testcase_ID=Request send and verify response}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason body includes only one field. 
+Expected Result: 1. Response Status code should be 201, It should create data successfully.
+2. Response to the API should be 'title' & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts Started ]]>
+            </line>
+            <line>
+              <![CDATA[Building JSON Body {  "title" : "Siddharth Sarjerao Ughade" }]]>
+            </line>
+            <line>
+              <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts]]>
+            </line>
+            <line>
+              <![CDATA[Response Code from API : 201]]>
+            </line>
+            <line>
+              <![CDATA[Response from API : {
+  "title": "Siddharth Sarjerao Ughade",
+  "id": 101
+}]]>
+            </line>
+            <line>
+              <![CDATA[Verify 'title' Expected : 'Siddharth Sarjerao Ughade' Actual : Siddharth Sarjerao Ughade]]>
+            </line>
+            <line>
+              <![CDATA[Verify 'id' Expected : '101' Actual : 101]]>
+            </line>
+            <line>
+              <![CDATA[Verify field 'body' should not be present in JSON response]]>
+            </line>
+            <line>
+              <![CDATA[Verify field 'userId' should not be present in JSON response]]>
+            </line>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason body includes only one field. 
+Expected Result: 1. Response Status code should be 201, It should create data successfully.
+2. Response to the API should be 'title' & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts Done! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRequestAndResponse -->
+        <test-method signature="testRequestAndResponse(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@9ed238c]" started-at="2023-01-16T15:53:14 CET" name="testRequestAndResponse" data-provider="getDataProviderDetails" finished-at="2023-01-16T15:53:14 CET" duration-ms="343" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id="101", Url=posts, SrNo=4, Method=POST, Domain=jsonplaceholder.typicode.com, body=, ResponseCode=201, userId=102, FieldNamesShouldNotPresentInResponse=title;body;userId, ResponseFieldNamesToVerify=id, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason's body is BLANK.
+Expected Result: 1. Response Status code should be 201, It should create data successfully
+2. Response to the API should be 'id' and it should match with data mentioned in respective columns, title=, FieldNames=, Testcase_ID=Request send and verify response}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason's body is BLANK.
+Expected Result: 1. Response Status code should be 201, It should create data successfully
+2. Response to the API should be 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts Started ]]>
+            </line>
+            <line>
+              <![CDATA[Building JSON Body {  "" : null }]]>
+            </line>
+            <line>
+              <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts]]>
+            </line>
+            <line>
+              <![CDATA[Response Code from API : 201]]>
+            </line>
+            <line>
+              <![CDATA[Response from API : {
+  "": null,
+  "id": 101
+}]]>
+            </line>
+            <line>
+              <![CDATA[Verify 'id' Expected : '101' Actual : 101]]>
+            </line>
+            <line>
+              <![CDATA[Verify field 'title' should not be present in JSON response]]>
+            </line>
+            <line>
+              <![CDATA[Verify field 'body' should not be present in JSON response]]>
+            </line>
+            <line>
+              <![CDATA[Verify field 'userId' should not be present in JSON response]]>
+            </line>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with POST method. Jason's body is BLANK.
+Expected Result: 1. Response Status code should be 201, It should create data successfully
+2. Response to the API should be 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts Done! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRequestAndResponse -->
+        <test-method signature="testRequestAndResponse(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@9ed238c]" started-at="2023-01-16T15:53:14 CET" name="testRequestAndResponse" data-provider="getDataProviderDetails" finished-at="2023-01-16T15:53:15 CET" duration-ms="351" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id="1", Url=posts/1, SrNo=5, Method=PUT, Domain=jsonplaceholder.typicode.com, body="et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad", ResponseCode=200, userId=102, FieldNamesShouldNotPresentInResponse=, ResponseFieldNamesToVerify=id;title;body;userId, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes all 4 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'title', 'body', 'userid' & 'id' and it should match with data mentioned in respective columns, title="Siddharth Sarjerao Ughade", FieldNames=id;title;body;userId, Testcase_ID=Request send and verify response}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes all 4 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'title', 'body', 'userid' & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Started ]]>
+            </line>
+            <line>
+              <![CDATA[Building JSON Body {  "id" : "1",  "title" : "Siddharth Sarjerao Ughade",  "body" : "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad",  "userId" : 102 }]]>
+            </line>
+            <line>
+              <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts/1]]>
+            </line>
+            <line>
+              <![CDATA[Response Code from API : 200]]>
+            </line>
+            <line>
+              <![CDATA[Response from API : {
+  "id": 1,
+  "title": "Siddharth Sarjerao Ughade",
+  "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad",
+  "userId": 102
+}]]>
+            </line>
+            <line>
+              <![CDATA[Verify 'id' Expected : '1' Actual : 1]]>
+            </line>
+            <line>
+              <![CDATA[Verify 'title' Expected : 'Siddharth Sarjerao Ughade' Actual : Siddharth Sarjerao Ughade]]>
+            </line>
+            <line>
+              <![CDATA[Verify 'body' Expected : 'et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad' Actual : et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad]]>
+            </line>
+            <line>
+              <![CDATA[Verify 'userId' Expected : '102' Actual : 102]]>
+            </line>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes all 4 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'title', 'body', 'userid' & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Done! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRequestAndResponse -->
+        <test-method signature="testRequestAndResponse(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@9ed238c]" started-at="2023-01-16T15:53:15 CET" name="testRequestAndResponse" data-provider="getDataProviderDetails" finished-at="2023-01-16T15:53:15 CET" duration-ms="362" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id="1", Url=posts/1, SrNo=6, Method=PUT, Domain=jsonplaceholder.typicode.com, body="et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad", ResponseCode=200, userId=, FieldNamesShouldNotPresentInResponse=userId, ResponseFieldNamesToVerify=id;title;body, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes only 3 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'title', 'body' & 'id' and it should match with data mentioned in respective columns, title="Siddharth Sarjerao Ughade", FieldNames=id;title;body, Testcase_ID=Request send and verify response}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes only 3 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'title', 'body' & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Started ]]>
+            </line>
+            <line>
+              <![CDATA[Building JSON Body {  "id" : "1",  "title" : "Siddharth Sarjerao Ughade",  "body" : "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad" }]]>
+            </line>
+            <line>
+              <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts/1]]>
+            </line>
+            <line>
+              <![CDATA[Response Code from API : 200]]>
+            </line>
+            <line>
+              <![CDATA[Response from API : {
+  "id": 1,
+  "title": "Siddharth Sarjerao Ughade",
+  "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad"
+}]]>
+            </line>
+            <line>
+              <![CDATA[Verify 'id' Expected : '1' Actual : 1]]>
+            </line>
+            <line>
+              <![CDATA[Verify 'title' Expected : 'Siddharth Sarjerao Ughade' Actual : Siddharth Sarjerao Ughade]]>
+            </line>
+            <line>
+              <![CDATA[Verify 'body' Expected : 'et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad' Actual : et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad]]>
+            </line>
+            <line>
+              <![CDATA[Verify field 'userId' should not be present in JSON response]]>
+            </line>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes only 3 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'title', 'body' & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Done! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRequestAndResponse -->
+        <test-method signature="testRequestAndResponse(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@9ed238c]" started-at="2023-01-16T15:53:15 CET" name="testRequestAndResponse" data-provider="getDataProviderDetails" finished-at="2023-01-16T15:53:15 CET" duration-ms="325" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id="1", Url=posts/1, SrNo=7, Method=PUT, Domain=jsonplaceholder.typicode.com, body=, ResponseCode=200, userId=, FieldNamesShouldNotPresentInResponse=userId;body, ResponseFieldNamesToVerify=id;title, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes only 2 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'title' & 'id' and it should match with data mentioned in respective columns, title="Siddharth Sarjerao Ughade", FieldNames=id;title, Testcase_ID=Request send and verify response}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes only 2 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'title' & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Started ]]>
+            </line>
+            <line>
+              <![CDATA[Building JSON Body {  "id" : "1",  "title" : "Siddharth Sarjerao Ughade" }]]>
+            </line>
+            <line>
+              <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts/1]]>
+            </line>
+            <line>
+              <![CDATA[Response Code from API : 200]]>
+            </line>
+            <line>
+              <![CDATA[Response from API : {
+  "id": 1,
+  "title": "Siddharth Sarjerao Ughade"
+}]]>
+            </line>
+            <line>
+              <![CDATA[Verify 'id' Expected : '1' Actual : 1]]>
+            </line>
+            <line>
+              <![CDATA[Verify 'title' Expected : 'Siddharth Sarjerao Ughade' Actual : Siddharth Sarjerao Ughade]]>
+            </line>
+            <line>
+              <![CDATA[Verify field 'userId' should not be present in JSON response]]>
+            </line>
+            <line>
+              <![CDATA[Verify field 'body' should not be present in JSON response]]>
+            </line>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes only 2 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'title' & 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Done! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRequestAndResponse -->
+        <test-method signature="testRequestAndResponse(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@9ed238c]" started-at="2023-01-16T15:53:15 CET" name="testRequestAndResponse" data-provider="getDataProviderDetails" finished-at="2023-01-16T15:53:16 CET" duration-ms="330" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id="1", Url=posts/1, SrNo=8, Method=PUT, Domain=jsonplaceholder.typicode.com, body=, ResponseCode=200, userId=, FieldNamesShouldNotPresentInResponse=userId;body;title, ResponseFieldNamesToVerify=id, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes only 1 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id' and it should match with data mentioned in respective columns, title=, FieldNames=id, Testcase_ID=Request send and verify response}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes only 1 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Started ]]>
+            </line>
+            <line>
+              <![CDATA[Building JSON Body {  "id" : "1" }]]>
+            </line>
+            <line>
+              <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts/1]]>
+            </line>
+            <line>
+              <![CDATA[Response Code from API : 200]]>
+            </line>
+            <line>
+              <![CDATA[Response from API : {
+  "id": 1
+}]]>
+            </line>
+            <line>
+              <![CDATA[Verify 'id' Expected : '1' Actual : 1]]>
+            </line>
+            <line>
+              <![CDATA[Verify field 'userId' should not be present in JSON response]]>
+            </line>
+            <line>
+              <![CDATA[Verify field 'body' should not be present in JSON response]]>
+            </line>
+            <line>
+              <![CDATA[Verify field 'title' should not be present in JSON response]]>
+            </line>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body includes only 1 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Done! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRequestAndResponse -->
+        <test-method signature="testRequestAndResponse(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@9ed238c]" started-at="2023-01-16T15:53:16 CET" name="testRequestAndResponse" data-provider="getDataProviderDetails" finished-at="2023-01-16T15:53:16 CET" duration-ms="342" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id="1", Url=posts/1, SrNo=9, Method=PUT, Domain=jsonplaceholder.typicode.com, body=, ResponseCode=200, userId=, FieldNamesShouldNotPresentInResponse=userId;body;title, ResponseFieldNamesToVerify=id, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body should be BLANK.
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id' and it should match with data mentioned in respective columns, title=, FieldNames=, Testcase_ID=Request send and verify response}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body should be BLANK.
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Started ]]>
+            </line>
+            <line>
+              <![CDATA[Building JSON Body {  "" : null }]]>
+            </line>
+            <line>
+              <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts/1]]>
+            </line>
+            <line>
+              <![CDATA[Response Code from API : 200]]>
+            </line>
+            <line>
+              <![CDATA[Response from API : {
+  "": null,
+  "id": 1
+}]]>
+            </line>
+            <line>
+              <![CDATA[Verify 'id' Expected : '1' Actual : 1]]>
+            </line>
+            <line>
+              <![CDATA[Verify field 'userId' should not be present in JSON response]]>
+            </line>
+            <line>
+              <![CDATA[Verify field 'body' should not be present in JSON response]]>
+            </line>
+            <line>
+              <![CDATA[Verify field 'title' should not be present in JSON response]]>
+            </line>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with PUT method. Jason body should be BLANK.
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Done! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRequestAndResponse -->
+        <test-method signature="testRequestAndResponse(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@9ed238c]" started-at="2023-01-16T15:53:16 CET" name="testRequestAndResponse" data-provider="getDataProviderDetails" finished-at="2023-01-16T15:53:16 CET" duration-ms="334" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id="1", Url=posts/1, SrNo=10, Method=PATCH, Domain=jsonplaceholder.typicode.com, body="quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto", ResponseCode=200, userId=1, FieldNamesShouldNotPresentInResponse=, ResponseFieldNamesToVerify=id;title;body;userId, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with valid data with PATCH method. Jason body includes 1 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id', 'title', 'body' & 'userId' and it should match with data mentioned in respective columns, title="sunt aut facere repellat provident occaecati excepturi optio reprehenderit", FieldNames=title, Testcase_ID=Request send and verify response}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with PATCH method. Jason body includes 1 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id', 'title', 'body' & 'userId' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Started ]]>
+            </line>
+            <line>
+              <![CDATA[Building JSON Body {  "title" : "sunt aut facere repellat provident occaecati excepturi optio reprehenderit" }]]>
+            </line>
+            <line>
+              <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts/1]]>
+            </line>
+            <line>
+              <![CDATA[Response Code from API : 200]]>
+            </line>
+            <line>
+              <![CDATA[Response from API : {
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}]]>
+            </line>
+            <line>
+              <![CDATA[Verify 'id' Expected : '1' Actual : 1]]>
+            </line>
+            <line>
+              <![CDATA[Verify 'title' Expected : 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit' Actual : sunt aut facere repellat provident occaecati excepturi optio reprehenderit]]>
+            </line>
+            <line>
+              <![CDATA[Verify 'body' Expected : 'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto' Actual : quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto]]>
+            </line>
+            <line>
+              <![CDATA[Verify 'userId' Expected : '1' Actual : 1]]>
+            </line>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with PATCH method. Jason body includes 1 fields
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id', 'title', 'body' & 'userId' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Done! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRequestAndResponse -->
+        <test-method signature="testRequestAndResponse(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@9ed238c]" started-at="2023-01-16T15:53:16 CET" name="testRequestAndResponse" data-provider="getDataProviderDetails" finished-at="2023-01-16T15:53:17 CET" duration-ms="318" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id="1", Url=posts/1, SrNo=11, Method=PATCH, Domain=jsonplaceholder.typicode.com, body="quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto", ResponseCode=200, userId=1, FieldNamesShouldNotPresentInResponse=, ResponseFieldNamesToVerify=id;title;body;userId, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with valid data with PATCH method. Jason body should be BLANK
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id', 'title', 'body' & 'userId' and it should match with data mentioned in respective columns, title="sunt aut facere repellat provident occaecati excepturi optio reprehenderit", FieldNames=, Testcase_ID=Request send and verify response}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with PATCH method. Jason body should be BLANK
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id', 'title', 'body' & 'userId' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Started ]]>
+            </line>
+            <line>
+              <![CDATA[Building JSON Body {  "" : null }]]>
+            </line>
+            <line>
+              <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts/1]]>
+            </line>
+            <line>
+              <![CDATA[Response Code from API : 200]]>
+            </line>
+            <line>
+              <![CDATA[Response from API : {
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
+  "": null
+}]]>
+            </line>
+            <line>
+              <![CDATA[Verify 'id' Expected : '1' Actual : 1]]>
+            </line>
+            <line>
+              <![CDATA[Verify 'title' Expected : 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit' Actual : sunt aut facere repellat provident occaecati excepturi optio reprehenderit]]>
+            </line>
+            <line>
+              <![CDATA[Verify 'body' Expected : 'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto' Actual : quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto]]>
+            </line>
+            <line>
+              <![CDATA[Verify 'userId' Expected : '1' Actual : 1]]>
+            </line>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with PATCH method. Jason body should be BLANK
+Expected Result: 1. Response Status code should be 200
+2. Response to the API should be 'id', 'title', 'body' & 'userId' and it should match with data mentioned in respective columns Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Done! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRequestAndResponse -->
+        <test-method signature="testRequestAndResponse(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@9ed238c]" started-at="2023-01-16T15:53:17 CET" name="testRequestAndResponse" data-provider="getDataProviderDetails" finished-at="2023-01-16T15:53:17 CET" duration-ms="323" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id=, Url=posts/1, SrNo=12, Method=DELETE, Domain=jsonplaceholder.typicode.com, body=, ResponseCode=200, userId=, FieldNamesShouldNotPresentInResponse=, ResponseFieldNamesToVerify=, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with valid data with DELETE method. Jason body should be BLANK
+Expected Result: 1. Response Status code should be 200
+2. Json response should be BLANK, title=, FieldNames=, Testcase_ID=Request send and verify response}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with DELETE method. Jason body should be BLANK
+Expected Result: 1. Response Status code should be 200
+2. Json response should be BLANK Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Started ]]>
+            </line>
+            <line>
+              <![CDATA[Building JSON Body {  "" : null }]]>
+            </line>
+            <line>
+              <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts/1]]>
+            </line>
+            <line>
+              <![CDATA[Response Code from API : 200]]>
+            </line>
+            <line>
+              <![CDATA[Response from API : {}]]>
+            </line>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with valid data with DELETE method. Jason body should be BLANK
+Expected Result: 1. Response Status code should be 200
+2. Json response should be BLANK Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/1 Done! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRequestAndResponse -->
+        <test-method signature="testRequestAndResponse(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@9ed238c]" started-at="2023-01-16T15:53:17 CET" name="testRequestAndResponse" data-provider="getDataProviderDetails" finished-at="2023-01-16T15:53:17 CET" duration-ms="335" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id=, Url=posts/101, SrNo=13, Method=POST, Domain=jsonplaceholder.typicode.com, body=, ResponseCode=404, userId=, FieldNamesShouldNotPresentInResponse=, ResponseFieldNamesToVerify=, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with invalid id with POST method
+Expected Result: 1. Response Status code should be 404
+2. Json response should be BLANK, title=, FieldNames=, Testcase_ID=Request send and verify response}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with invalid id with POST method
+Expected Result: 1. Response Status code should be 404
+2. Json response should be BLANK Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/101 Started ]]>
+            </line>
+            <line>
+              <![CDATA[Building JSON Body {  "" : null }]]>
+            </line>
+            <line>
+              <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts/101]]>
+            </line>
+            <line>
+              <![CDATA[Response Code from API : 404]]>
+            </line>
+            <line>
+              <![CDATA[Response from API : {}]]>
+            </line>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with invalid id with POST method
+Expected Result: 1. Response Status code should be 404
+2. Json response should be BLANK Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/101 Done! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRequestAndResponse -->
+        <test-method signature="testRequestAndResponse(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@9ed238c]" started-at="2023-01-16T15:53:17 CET" name="testRequestAndResponse" data-provider="getDataProviderDetails" finished-at="2023-01-16T15:53:18 CET" duration-ms="325" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id=, Url=posts/101, SrNo=14, Method=PUT, Domain=jsonplaceholder.typicode.com, body=, ResponseCode=500, userId=, FieldNamesShouldNotPresentInResponse=, ResponseFieldNamesToVerify=, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with invalid id with PUT method
+Expected Result: 1. Response Status code should be 500
+2. Json response should be BLANK, title=, FieldNames=, Testcase_ID=Request send and verify response}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with invalid id with PUT method
+Expected Result: 1. Response Status code should be 500
+2. Json response should be BLANK Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/101 Started ]]>
+            </line>
+            <line>
+              <![CDATA[Building JSON Body {  "" : null }]]>
+            </line>
+            <line>
+              <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts/101]]>
+            </line>
+            <line>
+              <![CDATA[Response Code from API : 500]]>
+            </line>
+            <line>
+              <![CDATA[Response from API : TypeError: Cannot read properties of undefined (reading 'id')
+    at update (/app/node_modules/json-server/lib/server/router/plural.js:262:24)
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at next (/app/node_modules/express/lib/router/route.js:137:13)
+    at next (/app/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/app/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at /app/node_modules/express/lib/router/index.js:281:22
+    at param (/app/node_modules/express/lib/router/index.js:354:14)
+    at param (/app/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/app/node_modules/express/lib/router/index.js:410:3)]]>
+            </line>
+            <line>
+              <![CDATA[API has Internal server error]]>
+            </line>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with invalid id with PUT method
+Expected Result: 1. Response Status code should be 500
+2. Json response should be BLANK Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/101 Done! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRequestAndResponse -->
+        <test-method signature="testRequestAndResponse(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@9ed238c]" started-at="2023-01-16T15:53:18 CET" name="testRequestAndResponse" data-provider="getDataProviderDetails" finished-at="2023-01-16T15:53:18 CET" duration-ms="345" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id=, Url=posts/101, SrNo=15, Method=PATCH, Domain=jsonplaceholder.typicode.com, body=, ResponseCode=200, userId=, FieldNamesShouldNotPresentInResponse=, ResponseFieldNamesToVerify=, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with invalid id with PATCH method
+Expected Result: 1. Response Status code should be 200
+2. Json response should be BLANK, title=, FieldNames=, Testcase_ID=Request send and verify response}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with invalid id with PATCH method
+Expected Result: 1. Response Status code should be 200
+2. Json response should be BLANK Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/101 Started ]]>
+            </line>
+            <line>
+              <![CDATA[Building JSON Body {  "" : null }]]>
+            </line>
+            <line>
+              <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts/101]]>
+            </line>
+            <line>
+              <![CDATA[Response Code from API : 200]]>
+            </line>
+            <line>
+              <![CDATA[Response from API : {
+  "": null
+}]]>
+            </line>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with invalid id with PATCH method
+Expected Result: 1. Response Status code should be 200
+2. Json response should be BLANK Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/101 Done! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRequestAndResponse -->
+        <test-method signature="testRequestAndResponse(java.util.Hashtable)[pri:0, instance:scripts.testRestAPI@9ed238c]" started-at="2023-01-16T15:53:18 CET" name="testRequestAndResponse" data-provider="getDataProviderDetails" finished-at="2023-01-16T15:53:18 CET" duration-ms="324" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id=, Url=posts/101, SrNo=16, Method=DELETE, Domain=jsonplaceholder.typicode.com, body=, ResponseCode=200, userId=, FieldNamesShouldNotPresentInResponse=, ResponseFieldNamesToVerify=, Texecute=Yes, Protocol=https://, Feature=POSITIVE
+Step to execute: Send API Request with invalid id with DELETE method
+Expected Result: 1. Response Status code should be 200
+2. Json response should be BLANK, title=, FieldNames=, Testcase_ID=Request send and verify response}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with invalid id with DELETE method
+Expected Result: 1. Response Status code should be 200
+2. Json response should be BLANK Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/101 Started ]]>
+            </line>
+            <line>
+              <![CDATA[Building JSON Body {  "" : null }]]>
+            </line>
+            <line>
+              <![CDATA[Sending Request : https://jsonplaceholder.typicode.com/posts/101]]>
+            </line>
+            <line>
+              <![CDATA[Response Code from API : 200]]>
+            </line>
+            <line>
+              <![CDATA[Response from API : {}]]>
+            </line>
+            <line>
+              <![CDATA[Feature POSITIVE
+Step to execute: Send API Request with invalid id with DELETE method
+Expected Result: 1. Response Status code should be 200
+2. Json response should be BLANK Testcase ID : Request send and verify response For API : https://jsonplaceholder.typicode.com/posts/101 Done! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRequestAndResponse -->
+      </class> <!-- scripts.testRestAPI -->
+    </test> <!-- Test to verify REST API Request and response -->
+  </suite> <!-- REST API Automation Test Suite -->
+</testng-results>

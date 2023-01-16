@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="REST API Automation Test Suite" parallel="tests">
+    <test name = "Test to verify API with userId">
+
+        <parameter name="ExcelWorkbookName" value="TestCasesData.xlsx"></parameter>
+        <parameter name="Worksheet" value="userIDTest"></parameter>
+        <parameter name="TestCaseID" value="Get all data for user id and verify data"></parameter>
+        <groups>
+            <run>
+                <include name="userId"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="scripts.testRestAPI"> </class>
+        </classes>
+    </test>
+    <test name = "Test to verify API with postId">
+        <parameter name="ExcelWorkbookName" value="TestCasesData.xlsx"></parameter>
+        <parameter name="Worksheet" value="postIDTest"></parameter>
+        <parameter name="TestCaseID" value="Get all data for post id and verify data"></parameter>
+        <groups>
+            <run>
+                <include name="postId"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="scripts.testRestAPI"> </class>
+        </classes>
+    </test>
+    <test name = "Test to verify REST API Request and response">
+        <parameter name="ExcelWorkbookName" value="TestCasesData.xlsx"></parameter>
+        <parameter name="Worksheet" value="RequestTest"></parameter>
+        <parameter name="TestCaseID" value="Request send and verify response"></parameter>
+        <groups>
+            <run>
+                <include name="RestRequest"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="scripts.testRestAPI"> </class>
+        </classes>
+    </test>
+</suite>

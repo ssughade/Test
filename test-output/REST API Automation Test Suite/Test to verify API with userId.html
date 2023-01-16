@@ -1,0 +1,242 @@
+<html>
+<head>
+<title>TestNG:  Test to verify API with userId</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test to verify API with userId</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jan 16 15:53:11 CET 2023</td>
+</tr>
+<tr><td>Total time:</td><td>4 seconds (4261 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>userId </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='scripts.testRestAPI.testVerifyUserIDData()'><b>testVerifyUserIDData</b><br>Test class: scripts.testRestAPI<br>Parameters: {id=1, Url=posts, Search_Field_Name=userId, SrNo=1, API_URL=https://jsonplaceholder.typicode.com/posts, Number_of_Rows=100, Domain=jsonplaceholder.typicode.com, body=quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto, userId=1, Texecute=Yes, Protocol=https://, Feature=POSITIVE :
+Step To Execute : Send Request.  
+Expected Result: 1. API should return as response of 100 userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given userid & id, title=sunt aut facere repellat provident occaecati excepturi optio reprehenderit, Testcase_ID=Get all data for user id and verify data}<br/>
+<a href="#Output-615214714" onClick='toggleBox("Output-615214714", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-615214714" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-615214714">
+Feature POSITIVE :
+Step To Execute : Send Request.  
+Expected Result: 1. API should return as response of 100 userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given userid & id Testcase ID : Get all data for user id and verify data For API : https://jsonplaceholder.typicode.com/posts Started <br/>
+Verifying number of records return by API<br/>
+Extracting 'title' for userid 1<br/>
+Verifying 'title' : Expected 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit' Actual : 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit'<br/>
+Extracting 'body' for userid 1<br/>
+Verifying 'body' : Expected 'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto' Actual : 'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto'<br/>
+Feature POSITIVE :
+Step To Execute : Send Request.  
+Expected Result: 1. API should return as response of 100 userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given userid & id Testcase ID : Get all data for user id and verify data Done!! <br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>scripts.testRestAPI@5b40ceb</td></tr>
+<tr>
+<td title='scripts.testRestAPI.testVerifyUserIDData()'><b>testVerifyUserIDData</b><br>Test class: scripts.testRestAPI<br>Parameters: {id=1, Url=posts/1, Search_Field_Name=userId, SrNo=4, API_URL=https://jsonplaceholder.typicode.com/posts/1, Number_of_Rows=1, Domain=jsonplaceholder.typicode.com, body=quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto, userId=1, Texecute=Yes, Protocol=https://, Feature=POSITIVE :
+Step To Execute : Send Request by passing valid userId.  
+Expected Result: 1. API should return as response for single userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given user id & id, title=sunt aut facere repellat provident occaecati excepturi optio reprehenderit, Testcase_ID=Get all data for user id and verify data}<br/>
+<a href="#Output-1514240370" onClick='toggleBox("Output-1514240370", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1514240370" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1514240370">
+Feature POSITIVE :
+Step To Execute : Send Request by passing valid userId.  
+Expected Result: 1. API should return as response for single userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given user id & id Testcase ID : Get all data for user id and verify data For API : https://jsonplaceholder.typicode.com/posts/1 Started <br/>
+Verifying number of records return by API<br/>
+Extracting 'title' for userid 1<br/>
+Verifying 'title' : Expected 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit' Actual : 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit'<br/>
+Extracting 'body' for userid 1<br/>
+Verifying 'body' : Expected 'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto' Actual : 'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto'<br/>
+Feature POSITIVE :
+Step To Execute : Send Request by passing valid userId.  
+Expected Result: 1. API should return as response for single userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given user id & id Testcase ID : Get all data for user id and verify data Done!! <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>scripts.testRestAPI@5b40ceb</td></tr>
+<tr>
+<td title='scripts.testRestAPI.testVerifyUserIDData()'><b>testVerifyUserIDData</b><br>Test class: scripts.testRestAPI<br>Parameters: {id=100, Url=posts, Search_Field_Name=userId, SrNo=2, API_URL=https://jsonplaceholder.typicode.com/posts, Number_of_Rows=100, Domain=jsonplaceholder.typicode.com, body=cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam et distinctio eum\naccusamus ratione error aut, userId=10, Texecute=Yes, Protocol=https://, Feature=POSITIVE :
+Step To Execute : Send Request.  
+Expected Result: 1. API should return as response of 100 userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given user id & id, title=at nam consequatur ea labore ea harum, Testcase_ID=Get all data for user id and verify data}<br/>
+<a href="#Output-1474385572" onClick='toggleBox("Output-1474385572", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1474385572" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1474385572">
+Feature POSITIVE :
+Step To Execute : Send Request.  
+Expected Result: 1. API should return as response of 100 userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given user id & id Testcase ID : Get all data for user id and verify data For API : https://jsonplaceholder.typicode.com/posts Started <br/>
+Verifying number of records return by API<br/>
+Extracting 'title' for userid 10<br/>
+Verifying 'title' : Expected 'at nam consequatur ea labore ea harum' Actual : 'at nam consequatur ea labore ea harum'<br/>
+Extracting 'body' for userid 10<br/>
+Verifying 'body' : Expected 'cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam et distinctio eum\naccusamus ratione error aut' Actual : 'cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam et distinctio eum\naccusamus ratione error aut'<br/>
+Feature POSITIVE :
+Step To Execute : Send Request.  
+Expected Result: 1. API should return as response of 100 userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given user id & id Testcase ID : Get all data for user id and verify data Done!! <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>scripts.testRestAPI@5b40ceb</td></tr>
+<tr>
+<td title='scripts.testRestAPI.testVerifyUserIDData()'><b>testVerifyUserIDData</b><br>Test class: scripts.testRestAPI<br>Parameters: {id=100, Url=posts, Search_Field_Name=userId, SrNo=3, API_URL=https://jsonplaceholder.typicode.com/posts, Number_of_Rows=100, Domain=jsonplaceholder.typicode.com, body=, userId=0, Texecute=Yes, Protocol=https://, Feature=NEGATIVE : 
+Step To Execute : Send Request.  
+Expected Result: 1. API should return as response of 100 userId's data.
+2. Search for userId which is not present in response, so 'title' & 'body' should be BLANK, title=, Testcase_ID=Get all data for user id and verify data}<br/>
+<a href="#Output-50377701" onClick='toggleBox("Output-50377701", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-50377701" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-50377701">
+Feature NEGATIVE : 
+Step To Execute : Send Request.  
+Expected Result: 1. API should return as response of 100 userId's data.
+2. Search for userId which is not present in response, so 'title' & 'body' should be BLANK Testcase ID : Get all data for user id and verify data For API : https://jsonplaceholder.typicode.com/posts Started <br/>
+Verifying number of records return by API<br/>
+Extracting 'title' for userid 0<br/>
+Verifying 'title' : Expected '' Actual : ''<br/>
+Extracting 'body' for userid 0<br/>
+Verifying 'body' : Expected '' Actual : ''<br/>
+Feature NEGATIVE : 
+Step To Execute : Send Request.  
+Expected Result: 1. API should return as response of 100 userId's data.
+2. Search for userId which is not present in response, so 'title' & 'body' should be BLANK Testcase ID : Get all data for user id and verify data Done!! <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>scripts.testRestAPI@5b40ceb</td></tr>
+<tr>
+<td title='scripts.testRestAPI.testVerifyUserIDData()'><b>testVerifyUserIDData</b><br>Test class: scripts.testRestAPI<br>Parameters: {id=10, Url=posts/10, Search_Field_Name=userId, SrNo=5, API_URL=https://jsonplaceholder.typicode.com/posts/10, Number_of_Rows=1, Domain=jsonplaceholder.typicode.com, body=quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error, userId=1, Texecute=Yes, Protocol=https://, Feature=POSITIVE :
+Step To Execute : Send Request by passing valid userId.  
+Expected Result: 1. API should return as response for single userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given user id & id, title=optio molestias id quia eum, Testcase_ID=Get all data for user id and verify data}<br/>
+<a href="#Output-846211797" onClick='toggleBox("Output-846211797", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-846211797" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-846211797">
+Feature POSITIVE :
+Step To Execute : Send Request by passing valid userId.  
+Expected Result: 1. API should return as response for single userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given user id & id Testcase ID : Get all data for user id and verify data For API : https://jsonplaceholder.typicode.com/posts/10 Started <br/>
+Verifying number of records return by API<br/>
+Extracting 'title' for userid 1<br/>
+Verifying 'title' : Expected 'optio molestias id quia eum' Actual : 'optio molestias id quia eum'<br/>
+Extracting 'body' for userid 1<br/>
+Verifying 'body' : Expected 'quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error' Actual : 'quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error'<br/>
+Feature POSITIVE :
+Step To Execute : Send Request by passing valid userId.  
+Expected Result: 1. API should return as response for single userId's data.
+2. 'title' & 'body' should match as mentioned in respective columns for given user id & id Testcase ID : Get all data for user id and verify data Done!! <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>scripts.testRestAPI@5b40ceb</td></tr>
+<tr>
+<td title='scripts.testRestAPI.testVerifyUserIDData()'><b>testVerifyUserIDData</b><br>Test class: scripts.testRestAPI<br>Parameters: {id=0, Url=posts/0, Search_Field_Name=userId, SrNo=6, API_URL=https://jsonplaceholder.typicode.com/posts/0, Number_of_Rows=1, Domain=jsonplaceholder.typicode.com, body=, userId=0, Texecute=Yes, Protocol=https://, Feature=NEGATIVE :
+Step To Execute : Send Request by passing invalid userId
+Expected Result: 1. API should NOT return any data for invalid userId's data.
+2. 'title' & 'body' should be BLANK, title=, Testcase_ID=Get all data for user id and verify data}<br/>
+<a href="#Output-531598569" onClick='toggleBox("Output-531598569", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-531598569" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-531598569">
+Feature NEGATIVE :
+Step To Execute : Send Request by passing invalid userId
+Expected Result: 1. API should NOT return any data for invalid userId's data.
+2. 'title' & 'body' should be BLANK Testcase ID : Get all data for user id and verify data For API : https://jsonplaceholder.typicode.com/posts/0 Started <br/>
+Verifying number of records return by API<br/>
+Extracting 'title' for userid 0<br/>
+Verifying 'title' : Expected '' Actual : ''<br/>
+Extracting 'body' for userid 0<br/>
+Verifying 'body' : Expected '' Actual : ''<br/>
+Feature NEGATIVE :
+Step To Execute : Send Request by passing invalid userId
+Expected Result: 1. API should NOT return any data for invalid userId's data.
+2. 'title' & 'body' should be BLANK Testcase ID : Get all data for user id and verify data Done!! <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>scripts.testRestAPI@5b40ceb</td></tr>
+</table><p>
+</body>
+</html>

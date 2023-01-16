@@ -1,0 +1,327 @@
+<html>
+<head>
+<title>TestNG:  Test to verify API with postId</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test to verify API with postId</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jan 16 15:53:11 CET 2023</td>
+</tr>
+<tr><td>Total time:</td><td>5 seconds (5716 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>postId </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='scripts.testRestAPI.testVerifyPostIDData()'><b>testVerifyPostIDData</b><br>Test class: scripts.testRestAPI<br>Parameters: {name=et fugit eligendi deleniti quidem qui sint nihil autem, id=6, Url=posts/2/comments, postId=2, Search_Field_Name=postId, SrNo=5, API_URL=https://jsonplaceholder.typicode.com/posts/2/comments, Number_of_Rows=5, Domain=jsonplaceholder.typicode.com, body=doloribus at sed quis culpa deserunt consectetur qui praesentium\naccusamus fugiat dicta\nvoluptatem rerum ut voluptate autem\nvoluptatem repellendus aspernatur dolorem in, Texecute=Yes, email=Presley.Mueller@myrl.com, Protocol=https://, Feature=POSITIVE :
+Step To Execute : Send Request with valid postid & comments
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify 1st record in response, Testcase_ID=Get all data for post id and verify data}<br/>
+<a href="#Output-1884410257" onClick='toggleBox("Output-1884410257", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1884410257" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1884410257">
+Feature POSITIVE :
+Step To Execute : Send Request with valid postid & comments
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify 1st record in response Testcase ID : Get all data for post id and verify data For API : https://jsonplaceholder.typicode.com/posts/2/comments Started <br/>
+Verifying number of records return by API<br/>
+Extracting 'name' for postId 2<br/>
+Verifying 'name' : Expected 'et fugit eligendi deleniti quidem qui sint nihil autem' Actual : 'et fugit eligendi deleniti quidem qui sint nihil autem'<br/>
+Extracting 'name' for postId 2<br/>
+Verifying 'email' : Expected 'Presley.Mueller@myrl.com' Actual : 'Presley.Mueller@myrl.com'<br/>
+Extracting 'body' for postId 2<br/>
+Verifying 'body' : Expected 'doloribus at sed quis culpa deserunt consectetur qui praesentium\naccusamus fugiat dicta\nvoluptatem rerum ut voluptate autem\nvoluptatem repellendus aspernatur dolorem in' Actual : 'doloribus at sed quis culpa deserunt consectetur qui praesentium\naccusamus fugiat dicta\nvoluptatem rerum ut voluptate autem\nvoluptatem repellendus aspernatur dolorem in'<br/>
+Feature POSITIVE :
+Step To Execute : Send Request with valid postid & comments
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify 1st record in response Testcase ID : Get all data for post id and verify data Done!! <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>scripts.testRestAPI@1c80e49b</td></tr>
+<tr>
+<td title='scripts.testRestAPI.testVerifyPostIDData()'><b>testVerifyPostIDData</b><br>Test class: scripts.testRestAPI<br>Parameters: {name=id labore ex et quam laborum, id=1, Url=?postId=1, postId=1, Search_Field_Name=postId, SrNo=1, API_URL=https://jsonplaceholder.typicode.com/comments?postId=1, Number_of_Rows=5, Domain=jsonplaceholder.typicode.com, body=laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium, Texecute=Yes, email=Eliseo@gardner.biz, Protocol=https://, Feature=POSITIVE :
+Step To Execute : Send Request with valid postid
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify 1st record in response, Testcase_ID=Get all data for post id and verify data}<br/>
+<a href="#Output-673760825" onClick='toggleBox("Output-673760825", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-673760825" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-673760825">
+Feature POSITIVE :
+Step To Execute : Send Request with valid postid
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify 1st record in response Testcase ID : Get all data for post id and verify data For API : https://jsonplaceholder.typicode.com/comments?postId=1 Started <br/>
+Verifying number of records return by API<br/>
+Extracting 'name' for postId 1<br/>
+Verifying 'name' : Expected 'id labore ex et quam laborum' Actual : 'id labore ex et quam laborum'<br/>
+Extracting 'name' for postId 1<br/>
+Verifying 'email' : Expected 'Eliseo@gardner.biz' Actual : 'Eliseo@gardner.biz'<br/>
+Extracting 'body' for postId 1<br/>
+Verifying 'body' : Expected 'laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium' Actual : 'laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium'<br/>
+Feature POSITIVE :
+Step To Execute : Send Request with valid postid
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify 1st record in response Testcase ID : Get all data for post id and verify data Done!! <br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>scripts.testRestAPI@1c80e49b</td></tr>
+<tr>
+<td title='scripts.testRestAPI.testVerifyPostIDData()'><b>testVerifyPostIDData</b><br>Test class: scripts.testRestAPI<br>Parameters: {name=, id=6, Url=?postId=0, postId=1, Search_Field_Name=postId, SrNo=4, API_URL=https://jsonplaceholder.typicode.com/comments?postId=0, Number_of_Rows=0, Domain=jsonplaceholder.typicode.com, body=, Texecute=Yes, email=, Protocol=https://, Feature=NEGATIVE :
+Step To Execute : Send Request with invalid postid
+Expected Result: 1. API should NOT return any response, so number of data in response should be 0
+2. Search for 'id' which is DOES NOT present in response, verify that 'name', 'email' & 'body' should be blank, Testcase_ID=Get all data for post id and verify data}<br/>
+<a href="#Output-510600251" onClick='toggleBox("Output-510600251", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-510600251" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-510600251">
+Feature NEGATIVE :
+Step To Execute : Send Request with invalid postid
+Expected Result: 1. API should NOT return any response, so number of data in response should be 0
+2. Search for 'id' which is DOES NOT present in response, verify that 'name', 'email' & 'body' should be blank Testcase ID : Get all data for post id and verify data For API : https://jsonplaceholder.typicode.com/comments?postId=0 Started <br/>
+Verifying number of records return by API<br/>
+Extracting 'name' for postId 1<br/>
+Verifying 'name' : Expected '' Actual : ''<br/>
+Extracting 'name' for postId 1<br/>
+Verifying 'email' : Expected '' Actual : ''<br/>
+Extracting 'body' for postId 1<br/>
+Verifying 'body' : Expected '' Actual : ''<br/>
+Feature NEGATIVE :
+Step To Execute : Send Request with invalid postid
+Expected Result: 1. API should NOT return any response, so number of data in response should be 0
+2. Search for 'id' which is DOES NOT present in response, verify that 'name', 'email' & 'body' should be blank Testcase ID : Get all data for post id and verify data Done!! <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>scripts.testRestAPI@1c80e49b</td></tr>
+<tr>
+<td title='scripts.testRestAPI.testVerifyPostIDData()'><b>testVerifyPostIDData</b><br>Test class: scripts.testRestAPI<br>Parameters: {name=eaque et deleniti atque tenetur ut quo ut, id=10, Url=posts/2/comments, postId=2, Search_Field_Name=postId, SrNo=6, API_URL=https://jsonplaceholder.typicode.com/posts/2/comments, Number_of_Rows=5, Domain=jsonplaceholder.typicode.com, body=voluptate iusto quis nobis reprehenderit ipsum amet nulla\nquia quas dolores velit et non\naut quia necessitatibus\nnostrum quaerat nulla et accusamus nisi facilis, Texecute=Yes, email=Carmen_Keeling@caroline.name, Protocol=https://, Feature=POSITIVE :
+Step To Execute : Send Request with valid postid & comments
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify last record in response, Testcase_ID=Get all data for post id and verify data}<br/>
+<a href="#Output-766835760" onClick='toggleBox("Output-766835760", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-766835760" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-766835760">
+Feature POSITIVE :
+Step To Execute : Send Request with valid postid & comments
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify last record in response Testcase ID : Get all data for post id and verify data For API : https://jsonplaceholder.typicode.com/posts/2/comments Started <br/>
+Verifying number of records return by API<br/>
+Extracting 'name' for postId 2<br/>
+Verifying 'name' : Expected 'eaque et deleniti atque tenetur ut quo ut' Actual : 'eaque et deleniti atque tenetur ut quo ut'<br/>
+Extracting 'name' for postId 2<br/>
+Verifying 'email' : Expected 'Carmen_Keeling@caroline.name' Actual : 'Carmen_Keeling@caroline.name'<br/>
+Extracting 'body' for postId 2<br/>
+Verifying 'body' : Expected 'voluptate iusto quis nobis reprehenderit ipsum amet nulla\nquia quas dolores velit et non\naut quia necessitatibus\nnostrum quaerat nulla et accusamus nisi facilis' Actual : 'voluptate iusto quis nobis reprehenderit ipsum amet nulla\nquia quas dolores velit et non\naut quia necessitatibus\nnostrum quaerat nulla et accusamus nisi facilis'<br/>
+Feature POSITIVE :
+Step To Execute : Send Request with valid postid & comments
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify last record in response Testcase ID : Get all data for post id and verify data Done!! <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>scripts.testRestAPI@1c80e49b</td></tr>
+<tr>
+<td title='scripts.testRestAPI.testVerifyPostIDData()'><b>testVerifyPostIDData</b><br>Test class: scripts.testRestAPI<br>Parameters: {name=, id=11, Url=posts/2/comments, postId=2, Search_Field_Name=postId, SrNo=7, API_URL=https://jsonplaceholder.typicode.com/posts/2/comments, Number_of_Rows=5, Domain=jsonplaceholder.typicode.com, body=, Texecute=Yes, email=, Protocol=https://, Feature=NEGATIVE :
+Step To Execute : Send Request with valid postid & comments
+Expected Result: 1. API should return as response to 5 postid's data.
+2. Searching for id which is not present in response, so it should return 'name', 'email' & 'body' as BLANK
+, Testcase_ID=Get all data for post id and verify data}<br/>
+<a href="#Output-770831413" onClick='toggleBox("Output-770831413", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-770831413" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-770831413">
+Feature NEGATIVE :
+Step To Execute : Send Request with valid postid & comments
+Expected Result: 1. API should return as response to 5 postid's data.
+2. Searching for id which is not present in response, so it should return 'name', 'email' & 'body' as BLANK
+ Testcase ID : Get all data for post id and verify data For API : https://jsonplaceholder.typicode.com/posts/2/comments Started <br/>
+Verifying number of records return by API<br/>
+Extracting 'name' for postId 2<br/>
+Verifying 'name' : Expected '' Actual : ''<br/>
+Extracting 'name' for postId 2<br/>
+Verifying 'email' : Expected '' Actual : ''<br/>
+Extracting 'body' for postId 2<br/>
+Verifying 'body' : Expected '' Actual : ''<br/>
+Feature NEGATIVE :
+Step To Execute : Send Request with valid postid & comments
+Expected Result: 1. API should return as response to 5 postid's data.
+2. Searching for id which is not present in response, so it should return 'name', 'email' & 'body' as BLANK
+ Testcase ID : Get all data for post id and verify data Done!! <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>scripts.testRestAPI@1c80e49b</td></tr>
+<tr>
+<td title='scripts.testRestAPI.testVerifyPostIDData()'><b>testVerifyPostIDData</b><br>Test class: scripts.testRestAPI<br>Parameters: {name=vero eaque aliquid doloribus et culpa, id=5, Url=?postId=1, postId=1, Search_Field_Name=postId, SrNo=2, API_URL=https://jsonplaceholder.typicode.com/comments?postId=1, Number_of_Rows=5, Domain=jsonplaceholder.typicode.com, body=harum non quasi et ratione\ntempore iure ex voluptates in ratione\nharum architecto fugit inventore cupiditate\nvoluptates magni quo et, Texecute=Yes, email=Hayden@althea.biz, Protocol=https://, Feature=POSITIVE :
+Step To Execute : Send Request with valid postid
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify last record in response, Testcase_ID=Get all data for post id and verify data}<br/>
+<a href="#Output-1860302855" onClick='toggleBox("Output-1860302855", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1860302855" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1860302855">
+Feature POSITIVE :
+Step To Execute : Send Request with valid postid
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify last record in response Testcase ID : Get all data for post id and verify data For API : https://jsonplaceholder.typicode.com/comments?postId=1 Started <br/>
+Verifying number of records return by API<br/>
+Extracting 'name' for postId 1<br/>
+Verifying 'name' : Expected 'vero eaque aliquid doloribus et culpa' Actual : 'vero eaque aliquid doloribus et culpa'<br/>
+Extracting 'name' for postId 1<br/>
+Verifying 'email' : Expected 'Hayden@althea.biz' Actual : 'Hayden@althea.biz'<br/>
+Extracting 'body' for postId 1<br/>
+Verifying 'body' : Expected 'harum non quasi et ratione\ntempore iure ex voluptates in ratione\nharum architecto fugit inventore cupiditate\nvoluptates magni quo et' Actual : 'harum non quasi et ratione\ntempore iure ex voluptates in ratione\nharum architecto fugit inventore cupiditate\nvoluptates magni quo et'<br/>
+Feature POSITIVE :
+Step To Execute : Send Request with valid postid
+Expected Result: 1. API should return as response to 5 postid's data.
+2. 'name', 'email' & 'body' should match as mentioned in respective columns for given post id & id
+NOTE : This verify last record in response Testcase ID : Get all data for post id and verify data Done!! <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>scripts.testRestAPI@1c80e49b</td></tr>
+<tr>
+<td title='scripts.testRestAPI.testVerifyPostIDData()'><b>testVerifyPostIDData</b><br>Test class: scripts.testRestAPI<br>Parameters: {name=, id=6, Url=posts/0/comments, postId=1, Search_Field_Name=postId, SrNo=8, API_URL=https://jsonplaceholder.typicode.com/posts/0/comments, Number_of_Rows=0, Domain=jsonplaceholder.typicode.com, body=, Texecute=Yes, email=, Protocol=https://, Feature=NEGATIVE :
+Step To Execute : Send Request with Invalid postid & comments
+Expected Result: 1. API should NOT return any response.
+2. 'name', 'email' & 'body' should be BLANK, Testcase_ID=Get all data for post id and verify data}<br/>
+<a href="#Output-821334217" onClick='toggleBox("Output-821334217", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-821334217" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-821334217">
+Feature NEGATIVE :
+Step To Execute : Send Request with Invalid postid & comments
+Expected Result: 1. API should NOT return any response.
+2. 'name', 'email' & 'body' should be BLANK Testcase ID : Get all data for post id and verify data For API : https://jsonplaceholder.typicode.com/posts/0/comments Started <br/>
+Verifying number of records return by API<br/>
+Extracting 'name' for postId 1<br/>
+Verifying 'name' : Expected '' Actual : ''<br/>
+Extracting 'name' for postId 1<br/>
+Verifying 'email' : Expected '' Actual : ''<br/>
+Extracting 'body' for postId 1<br/>
+Verifying 'body' : Expected '' Actual : ''<br/>
+Feature NEGATIVE :
+Step To Execute : Send Request with Invalid postid & comments
+Expected Result: 1. API should NOT return any response.
+2. 'name', 'email' & 'body' should be BLANK Testcase ID : Get all data for post id and verify data Done!! <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>scripts.testRestAPI@1c80e49b</td></tr>
+<tr>
+<td title='scripts.testRestAPI.testVerifyPostIDData()'><b>testVerifyPostIDData</b><br>Test class: scripts.testRestAPI<br>Parameters: {name=, id=6, Url=?postId=1, postId=1, Search_Field_Name=postId, SrNo=3, API_URL=https://jsonplaceholder.typicode.com/comments?postId=1, Number_of_Rows=5, Domain=jsonplaceholder.typicode.com, body=, Texecute=Yes, email=, Protocol=https://, Feature=NEGATIVE : 
+Step To Execute : Send Request with valid postid
+Expected Result: 1. API should return as response of 5 postid's data.
+2. Search for 'id' which is DOES NOT present in response, verify that 'name', 'email' & 'body' should be blank, Testcase_ID=Get all data for post id and verify data}<br/>
+<a href="#Output-19603236" onClick='toggleBox("Output-19603236", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-19603236" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-19603236">
+Feature NEGATIVE : 
+Step To Execute : Send Request with valid postid
+Expected Result: 1. API should return as response of 5 postid's data.
+2. Search for 'id' which is DOES NOT present in response, verify that 'name', 'email' & 'body' should be blank Testcase ID : Get all data for post id and verify data For API : https://jsonplaceholder.typicode.com/comments?postId=1 Started <br/>
+Verifying number of records return by API<br/>
+Extracting 'name' for postId 1<br/>
+Verifying 'name' : Expected '' Actual : ''<br/>
+Extracting 'name' for postId 1<br/>
+Verifying 'email' : Expected '' Actual : ''<br/>
+Extracting 'body' for postId 1<br/>
+Verifying 'body' : Expected '' Actual : ''<br/>
+Feature NEGATIVE : 
+Step To Execute : Send Request with valid postid
+Expected Result: 1. API should return as response of 5 postid's data.
+2. Search for 'id' which is DOES NOT present in response, verify that 'name', 'email' & 'body' should be blank Testcase ID : Get all data for post id and verify data Done!! <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>scripts.testRestAPI@1c80e49b</td></tr>
+</table><p>
+</body>
+</html>
